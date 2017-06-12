@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Projekt.MS3.WebService" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Projekt.MS3.WebService" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="Book">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="autorzy" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="iloscStron" type="xs:int" />
+      <xs:element minOccurs="0" name="isbn" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="okladka" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="opis" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="oprawa" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="tytul" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="wydawnictwo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="wymiary" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Book" nillable="true" type="tns:Book" />
+  <xs:complexType name="ArrayOfBookForListShort">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="BookForListShort" nillable="true" type="tns:BookForListShort" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfBookForListShort" nillable="true" type="tns:ArrayOfBookForListShort" />
+  <xs:complexType name="BookForListShort">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="tytul" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BookForListShort" nillable="true" type="tns:BookForListShort" />
+  <xs:complexType name="ArrayOfBookForListLong">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="BookForListLong" nillable="true" type="tns:BookForListLong" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfBookForListLong" nillable="true" type="tns:ArrayOfBookForListLong" />
+  <xs:complexType name="BookForListLong">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="okladka" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="opis" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="tytul" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BookForListLong" nillable="true" type="tns:BookForListLong" />
+</xs:schema>

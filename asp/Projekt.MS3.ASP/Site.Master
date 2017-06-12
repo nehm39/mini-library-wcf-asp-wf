@@ -1,0 +1,46 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.Master.cs" Inherits="Projekt.MS3.Site1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="header">
+            <div id="menu" style="float:left">
+                <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Default.aspx" CssClass="MenuItem">Strona główna</asp:HyperLink>
+                <asp:HyperLink ID="HyperLinkLogin" runat="server" NavigateUrl="~/Login.aspx" CssClass="MenuItem">Logowanie</asp:HyperLink>
+                <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/About.aspx" CssClass="MenuItem">Informacje</asp:HyperLink>
+            </div>
+            <div id="login_info" runat="server" style="float:right">
+                <asp:Label ID="LabelLoginInfo" runat="server"></asp:Label>
+                &nbsp;[<asp:LinkButton ID="LinkButtonACP" runat="server" OnClick="LinkButtonACP_Click">ACP</asp:LinkButton>]
+                &nbsp;[<asp:LinkButton ID="LinkButtonLogout" runat="server" OnClick="LinkButtonLogout_Click">Wyloguj</asp:LinkButton>]
+            </div>
+            <div id="wyszukiwarka">
+                <br />
+                <asp:TextBox ID="TextBoxSzukaj" runat="server" Style="margin-right: 10px" Width="289px"></asp:TextBox>
+                <asp:Button ID="ButtonSzukaj" runat="server" Text="Szukaj" OnClick="ButtonSzukaj_Click" ValidationGroup="szukaj" />
+            </div>
+            <div style="float:right; margin-right: 75px; text-align:right"><asp:CustomValidator ID="SzukajCustomValidator" runat="server" ErrorMessage="Szukany tekst musi składać się z min. 3 znaków" ForeColor="Red" ControlToValidate="TextBoxSzukaj" OnServerValidate="SzukajCustomValidator_ServerValidate" ValidateEmptyText="True" ValidationGroup="szukaj"></asp:CustomValidator></div>
+            <div id="logo">
+                Biblioteka
+            </div>
+            <hr />
+        </div>
+        <div id="content">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div id="footer" style="margin-top: 20px">
+            <hr />
+            Strona wykonana przez: Patryk Siwiec, Szymon Gajewski w ramach projektu na przedmiot: Szkolenie Microsoft 3.
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,48 @@
+﻿body {
+    background: #d4d5d3;
+    width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+html {
+    background: #808080;
+}
+
+#header {
+    background: #ee9a5e;
+    margin-bottom: 20px;
+}
+
+#footer {
+}
+
+#menu {
+}
+
+#wyszukiwarka {
+    text-align: right;
+}
+
+#logo {
+}
+
+#access_denied {
+    text-align: center;
+}
+
+.LabelEllipsisStyle {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+    overflow: hidden;
+}
+
+.ImageTextFlow {
+    float: left; 
+    margin-right: 10px;
+}
+
+.MenuItem {
+    margin-right: 5px;
+}

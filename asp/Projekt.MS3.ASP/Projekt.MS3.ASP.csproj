@@ -1,0 +1,1536 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E0FC8A9B-195B-42B8-AB9E-8437516002AD}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Projekt.MS3</RootNamespace>
+    <AssemblyName>Projekt.MS3</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PublishDatabaseSettings>
+      <Objects>
+      </Objects>
+    </PublishDatabaseSettings>
+    <DocumentationFile>
+    </DocumentationFile>
+    <RegisterForComInterop>false</RegisterForComInterop>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ACP.aspx" />
+    <Content Include="Add.aspx" />
+    <Content Include="covers\100-sposobow-na-excel-2007-pl-tworzenie,pd,134381.jpg" />
+    <Content Include="covers\100-sposobow-na-ubuntu,pd,78866.jpg" />
+    <Content Include="covers\122-sposoby-na-openoffice-ux-pl-2-0,pd,78779.jpg" />
+    <Content Include="covers\19-grzechow-smiertelnych-jak-naprawic,pd,30332.jpg" />
+    <Content Include="covers\35-najlepszych-narzedzi-i-makr,pd,307779.jpg" />
+    <Content Include="covers\3ds-max,pd,308763.jpg" />
+    <Content Include="covers\3ds-max-2009,pd,196194.jpg" />
+    <Content Include="covers\3ds-max-2010-a,pd,231432.jpg" />
+    <Content Include="covers\3ds-max-2010-biblia,pd,225587.jpg" />
+    <Content Include="covers\3ds-max-2012-biblia,pd,329136.jpg" />
+    <Content Include="covers\3ds-max-2012-cwiczenia-praktyczne,pd,319076.jpg" />
+    <Content Include="covers\70-najlepszych-trikow-w-excelu-a,pd,322629.jpg" />
+    <Content Include="covers\80-sposobow-na-ajax,pd,78824.jpg" />
+    <Content Include="covers\abc-coreldraw-x6-pl,pd,358099.jpg" />
+    <Content Include="covers\abc-excel-2013-pl,pd,413445.jpg" />
+    <Content Include="covers\abc-internet-explorera-6-0,pd,52932.jpg" />
+    <Content Include="covers\abc-internetu-wydanie-iv,pd,79110.jpg" />
+    <Content Include="covers\abc-internetu-wydanie-vi,pd,107274.jpg" />
+    <Content Include="covers\abc-internetu-wydanie-vii,pd,249544.jpg" />
+    <Content Include="covers\abc-jezyka-html-i-xhtml-E,pd,132910.jpg" />
+    <Content Include="covers\abc-komputera-2012,pd,303631.jpg" />
+    <Content Include="covers\abc-komputera-c,pd,384847.jpg" />
+    <Content Include="covers\abc-komputera-d,pd,471158.jpg" />
+    <Content Include="covers\abc-komputera-wydanie-vii-a,pd,89821.jpg" />
+    <Content Include="covers\abc-laptopow,pd,190660.jpg" />
+    <Content Include="covers\abc-linux,pd,79182.jpg" />
+    <Content Include="covers\abc-mac-os-x-lion,pd,306074.jpg" />
+    <Content Include="covers\abc-ms-office-2013-pl,pd,413860.jpg" />
+    <Content Include="covers\abc-nagrywania-plyt,pd,148983.jpg" />
+    <Content Include="covers\abc-photoshop-cs6cs6-pl,pd,369017.jpg" />
+    <Content Include="covers\abc-sam-optymalizuje-komputer,pd,106904.jpg" />
+    <Content Include="covers\abc-sam-skladam-komputer-wydanie-2,pd,78646.jpg" />
+    <Content Include="covers\abc-sam-skladam-komputer-wydanie-iv,pd,230022.jpg" />
+    <Content Include="covers\abc-systemu-windows-7-pl,pd,200101.jpg" />
+    <Content Include="covers\abc-systemu-windows-8-pl,pd,369018.jpg" />
+    <Content Include="covers\abc-systemu-windows-vista-pl,pd,89783.jpg" />
+    <Content Include="covers\abc-systemu-windows-xp-pl-wydanie-2,pd,78840.jpg" />
+    <Content Include="covers\abc-uzytkownika-microsoft-office-2007,pd,211660.jpg" />
+    <Content Include="covers\abc-word-2010-pl,pd,235046.jpg" />
+    <Content Include="covers\abc-word-2013-pl,pd,413861.jpg" />
+    <Content Include="covers\abduzeedo-inspirujacy-przewodnik-po,pd,316703.jpg" />
+    <Content Include="covers\access-2007-kurs-podstawowy,pd,274219.jpg" />
+    <Content Include="covers\access-2007-pl-biblia,pd,111288.jpg" />
+    <Content Include="covers\access-2007-pl-seria-praktyk,pd,173214.jpg" />
+    <Content Include="covers\access-2007-tworzenie-aplikacji,pd,301800.jpg" />
+    <Content Include="covers\access-2010-pl-biblia,pd,440101.jpg" />
+    <Content Include="covers\access-2010-pl-cwiczenia-praktyczne,pd,236407.jpg" />
+    <Content Include="covers\access-2010-praktyczny-kurs,pd,315135.jpg" />
+    <Content Include="covers\access-2010-w-praktyce,pd,466421.jpg" />
+    <Content Include="covers\access-2013-pl-kurs,pd,447782.jpg" />
+    <Content Include="covers\access-w-biurze-i-nie-tylko-G,pd,94586.jpg" />
+    <Content Include="covers\active-server-pages-30-B,pd,51584.jpg" />
+    <Content Include="covers\administrowanie-bazami-danych-microsoft,pd,373180.jpg" />
+    <Content Include="covers\administrowanie-oracle-enterprise,pd,428708.jpg" />
+    <Content Include="covers\adobe-acrobat-3d-version-8-oficjalny,pd,144137.jpg" />
+    <Content Include="covers\adobe-acrobat-99-pl,pd,201381.jpg" />
+    <Content Include="covers\adobe-after-effects-cs5,pd,264059.jpg" />
+    <Content Include="covers\adobe-air-dla-programistow-javascript,pd,150286.jpg" />
+    <Content Include="covers\adobe-air-i-ajax,pd,213274.jpg" />
+    <Content Include="covers\adobe-creative-suite-22-pl-oficjalny,pd,78708.jpg" />
+    <Content Include="covers\adobe-dreamweaver-cs3-z-asp-coldfusion,pd,134773.jpg" />
+    <Content Include="covers\adobe-dreamweaver-cs3cs3-pl-oficjalny,pd,118106.jpg" />
+    <Content Include="covers\adobe-dreamweaver-cs5cs5-pl,pd,259122.jpg" />
+    <Content Include="covers\adobe-fireworks-cs5cs5-pl,pd,271412.jpg" />
+    <Content Include="covers\adobe-flash-cs3-professional-oficjalny,pd,118105.jpg" />
+    <Content Include="covers\adobe-flash-cs3-professional-pl,pd,157252.jpg" />
+    <Content Include="covers\adobe-flash-cs3cs3-pl-professional,pd,163954.jpg" />
+    <Content Include="covers\adobe-flash-cs4cs4-pl,pd,198409.jpg" />
+    <Content Include="covers\adobe-flash-cs5cs5-pl-professional,pd,259120.jpg" />
+    <Content Include="covers\adobe-flash-cs5cs5-pl-professional-a,pd,279692.jpg" />
+    <Content Include="covers\adobe-flash-cs6-i-actionscript-30,pd,367193.jpg" />
+    <Content Include="covers\adobe-flash-i-php,pd,213462.jpg" />
+    <Content Include="covers\adobe-flash-professional-cs6cs6pl,pd,376996.jpg" />
+    <Content Include="covers\adobe-flex-3,pd,201655.jpg" />
+    <Content Include="covers\adobe-flex-4,pd,270040.jpg" />
+    <Content Include="covers\adobe-illustrator-cs3cs3-pl-oficjalny,pd,128444.jpg" />
+    <Content Include="covers\adobe-illustrator-cs4cs4-pl,pd,198411.jpg" />
+    <Content Include="covers\adobe-illustrator-cs6cs6-pl-oficjalny,pd,376997.jpg" />
+    <Content Include="covers\adobe-illustrator-projekty-z-klasa,pd,348268.jpg" />
+    <Content Include="covers\adobe-indesign-cs3cs3-pl-oficjalny,pd,119667.jpg" />
+    <Content Include="covers\adobe-indesign-cs4cs4-pl,pd,198412.jpg" />
+    <Content Include="covers\adobe-indesign-cs6cs6-pl-oficjalny,pd,376998.jpg" />
+    <Content Include="covers\adobe-photoshop-cs4cs4-pl-a,pd,201386.jpg" />
+    <Content Include="covers\adobe-photoshop-cs4cs4-pl-b,pd,206591.jpg" />
+    <Content Include="covers\adobe-photoshop-cs6cs6-pl-oficjalny,pd,376999.jpg" />
+    <Content Include="covers\adobe-photoshop-lightroom-2,pd,198408.jpg" />
+    <Content Include="covers\adobe-photoshop-lightroom-2-a,pd,204595.jpg" />
+    <Content Include="covers\adobe-photoshop-lightroom-3,pd,264060.jpg" />
+    <Content Include="covers\adobe-photoshop-lightroom-3-a,pd,290188.jpg" />
+    <Content Include="covers\adobe-photoshop-lightroom-4,pd,359358.jpg" />
+    <Content Include="covers\agile-programowanie-w-rails,pd,121585.jpg" />
+    <Content Include="covers\agile-programowanie-zwinne-zasady,pd,118398.jpg" />
+    <Content Include="covers\ajax-i-php-cwiczenia-praktyczne,pd,109714.jpg" />
+    <Content Include="covers\ajax-i-php-tworzenie-interaktywnych,pd,78855.jpg" />
+    <Content Include="covers\ajax-i-php-tworzenie-interaktywnych-a,pd,270928.jpg" />
+    <Content Include="covers\ajax-od-podstaw,pd,118108.jpg" />
+    <Content Include="covers\ajax-on-java,pd,110820.jpg" />
+    <Content Include="covers\ajax-on-rails,pd,108053.jpg" />
+    <Content Include="covers\ajax-w-akcji,pd,79462.jpg" />
+    <Content Include="covers\ajax-zaawansowane-programowanie,pd,79468.jpg" />
+    <Content Include="covers\akademia-on-line-vol-2,pd,75459.jpg" />
+    <Content Include="covers\akademia-sieci-cisco-ccna-exploration,pd,146566.jpg" />
+    <Content Include="covers\akademia-sieci-cisco-ccna-exploration-a,pd,152892.jpg" />
+    <Content Include="covers\akademia-sieci-cisco-ccna-exploration-b,pd,107388.jpg" />
+    <Content Include="covers\akademia-sieci-cisco-ccna-exploration-d,pd,108181.jpg" />
+    <Content Include="covers\akademia-sieci-cisco-ccna-semestr-3,pd,89874.jpg" />
+    <Content Include="covers\algorytmy-c,pd,221604.jpg" />
+    <Content Include="covers\algorytmy-genetyczne-kompendium-tom-1,pd,108185.jpg" />
+    <Content Include="covers\algorytmy-genetyczne-kompendium-tom-2,pd,108183.jpg" />
+    <Content Include="covers\algorytmy-i-struktury-danych,pd,40482.jpg" />
+    <Content Include="covers\anaia-projektu,pd,162603.jpg" />
+    <Content Include="covers\analiza-danych-z-programem-r,pd,298929.jpg" />
+    <Content Include="covers\analiza-i-prezentacja-danych-w-excel,pd,293602.jpg" />
+    <Content Include="covers\analiza-ryzyka-i-ochrona-informacji-w,pd,118298.jpg" />
+    <Content Include="covers\analiza-sledcza-i-powlamaniowa,pd,420875.jpg" />
+    <Content Include="covers\analiza-statystyczna-microsoft-excel,pd,339860.jpg" />
+    <Content Include="covers\analiza-statystyczna-w-srodowisku-r-dla,pd,303832.jpg" />
+    <Content Include="covers\android,pd,300448.jpg" />
+    <Content Include="covers\android-2-tworzenie-aplikacji,pd,238472.jpg" />
+    <Content Include="covers\android-3-tworzenie-aplikacji,pd,316108.jpg" />
+    <Content Include="covers\android-flash-zaawansowane,pd,336553.jpg" />
+    <Content Include="covers\android-podstawy-tworzenia-aplikacji,pd,450069.jpg" />
+    <Content Include="covers\android-poradnik-programisty,pd,388659.jpg" />
+    <Content Include="covers\android-programowanie-gier-na-tablety,pd,352835.jpg" />
+    <Content Include="covers\android-receptury,pd,386940.jpg" />
+    <Content Include="covers\android-tworzenie-aplikacji-w-oparciu,pd,444133.jpg" />
+    <Content Include="covers\android-ui-podrecznik-dla-projektantow,pd,452290.jpg" />
+    <Content Include="covers\android-w-akcji,pd,300458.jpg" />
+    <Content Include="covers\android-w-praktyce,pd,348791.jpg" />
+    <Content Include="covers\angielsko-polski-slownik-informatyczny,pd,34116.jpg" />
+    <Content Include="covers\animacja,pd,164064.jpg" />
+    <Content Include="covers\animacja-komputerowa,pd,303860.jpg" />
+    <Content Include="covers\animacja-komputerowa-w-procesie,pd,170372.jpg" />
+    <Content Include="covers\anti-spam-tool-kit-edycja-polska,pd,79292.jpg" />
+    <Content Include="covers\antywzorce-jezyka-sql,pd,309457.jpg" />
+    <Content Include="covers\apache-2,pd,208287.jpg" />
+    <Content Include="covers\aplikacje-w-delphi-przyklady,pd,78831.jpg" />
+    <Content Include="covers\aplikacje-w-visual-c-2005-przyklady,pd,106877.jpg" />
+    <Content Include="covers\archicad-wprowadzenie-do-projektowania,pd,407576.jpg" />
+    <Content Include="covers\architektura-komputerow-model-cisc,pd,370460.jpg" />
+    <Content Include="covers\architektura-oprogramowania-w-praktyce,pd,59828.jpg" />
+    <Content Include="covers\architektura-oprogramowania-w-praktyce-a,pd,300435.jpg" />
+    <Content Include="covers\arduino-dla-zaawansowanych,pd,474081.jpg" />
+    <Content Include="covers\arduino-i-projekty-lego,pd,437272.jpg" />
+    <Content Include="covers\arkusz-kalkulacyjny-excel-w-praktyce,pd,466399.jpg" />
+    <Content Include="covers\arytmetyka-komputerow-w-praktyce-cd,pd,108195.jpg" />
+    <Content Include="covers\asembler,pd,175347.jpg" />
+    <Content Include="covers\asembler-leksykon-kieszonkowy,pd,319805.jpg" />
+    <Content Include="covers\asembler-sztuka-programowania,pd,79298.jpg" />
+    <Content Include="covers\asortyment-produktow-programowych,pd,34922.jpg" />
+    <Content Include="covers\asp-net-3-5-programowanie,pd,220798.jpg" />
+    <Content Include="covers\asp-net-3-5-z-wykorzystaniem-c-i-vb,pd,211461.jpg" />
+    <Content Include="covers\asp-net-ajax,pd,200100.jpg" />
+    <Content Include="covers\aspnet-20-ajax-zaawansowane,pd,135144.jpg" />
+    <Content Include="covers\aspnet-20-i-ajax,pd,148558.jpg" />
+    <Content Include="covers\aspnet-20-ksiega-eksperta,pd,122076.jpg" />
+    <Content Include="covers\aspnet-20-projektowanie-aplikacji,pd,121582.jpg" />
+    <Content Include="covers\aspnet-35-dla-programistow-php,pd,165169.jpg" />
+    <Content Include="covers\aspnet-ajax,pd,153504.jpg" />
+    <Content Include="covers\aspnet-ajax-server-controls,pd,183452.jpg" />
+    <Content Include="covers\aspnet-mvc-3-framework-zaawansowane,pd,345046.jpg" />
+    <Content Include="covers\aspnet-mvc-4-programowanie,pd,404527.jpg" />
+    <Content Include="covers\aspnet-mvc-4-programowanie-aplikacji,pd,416160.jpg" />
+    <Content Include="covers\aspnet-mvc-4-zaawansowane,pd,432090.jpg" />
+    <Content Include="covers\aspnet-mvc-kompletny-przewodnik-dla,pd,458123.jpg" />
+    <Content Include="covers\aspnet-w-visual-web-developer-2008,pd,146920.jpg" />
+    <Content Include="covers\aspnet-web-forms-kompletny-przewodnik,pd,464627.jpg" />
+    <Content Include="covers\ataki-na-strony-internetowe-cd,pd,336645.jpg" />
+    <Content Include="covers\aurox-linux-cwiczenia,pd,266396.jpg" />
+    <Content Include="covers\autocad-2004-i-autocad-mechanical-2004,pd,34042.jpg" />
+    <Content Include="covers\autocad-2005-dla-uzytkownikow-autocad-C,pd,79351.jpg" />
+    <Content Include="covers\autocad-2005-i-2005-pl-D,pd,78729.jpg" />
+    <Content Include="covers\autocad-2005-pl-C,pd,111655.jpg" />
+    <Content Include="covers\autocad-2005-pl-pierwsze-kroki,pd,79290.jpg" />
+    <Content Include="covers\autocad-2006-i-2006-pl-E,pd,132911.jpg" />
+    <Content Include="covers\autocad-2006-pl-pierwsze-kroki-C,pd,78687.jpg" />
+    <Content Include="covers\autocad-2007,pd,108647.jpg" />
+    <Content Include="covers\autocad-2007-i-2007-pl-cwiczenia,pd,107593.jpg" />
+    <Content Include="covers\autocad-2007-pl-3cdrom,pd,106880.jpg" />
+    <Content Include="covers\autocad-2008,pd,145371.jpg" />
+    <Content Include="covers\autocad-2008-i-2008-pl,pd,149319.jpg" />
+    <Content Include="covers\autocad-2008-pl-pierwsze-kroki,pd,145372.jpg" />
+    <Content Include="covers\autocad-2009lt2009-wersja-polska,pd,156326.jpg" />
+    <Content Include="covers\autocad-2011,pd,271414.jpg" />
+    <Content Include="covers\autocad-2011-pl,pd,271413.jpg" />
+    <Content Include="covers\autocad-2012-i-2012-pl-cwiczenia,pd,373092.jpg" />
+    <Content Include="covers\autocad-2012lt2012ws,pd,294162.jpg" />
+    <Content Include="covers\autocad-2012lt2012ws-a,pd,300602.jpg" />
+    <Content Include="covers\autocad-2013-lt2013-ws,pd,345115.jpg" />
+    <Content Include="covers\autocad-2013-pl-pierwsze-kroki,pd,417915.jpg" />
+    <Content Include="covers\autocad-2014lt2014360-ws,pd,432196.jpg" />
+    <Content Include="covers\autodesk-inventor-10pl10-metoda,pd,54891.jpg" />
+    <Content Include="covers\autodesk-inventor-2010pl2010,pd,199134.jpg" />
+    <Content Include="covers\autodesk-inventor-professional,pd,448602.jpg" />
+    <Content Include="covers\autodesk-inventor-professionalfusion,pd,308217.jpg" />
+    <Content Include="covers\avr-praktyczne-projekty,pd,431799.jpg" />
+    <Content Include="covers\backtrack-5-testy-penetracyjne-sieci,pd,411864.jpg" />
+    <Content Include="covers\backup-i-zarzadzanie-danymi-w-windows,pd,327667.jpg" />
+    <Content Include="covers\bazy-danych-dla-studentow-podstawy,pd,340363.jpg" />
+    <Content Include="covers\bazy-danych-europejski-certyfikat,pd,15744.jpg" />
+    <Content Include="covers\bazy-danych-uczymy-sie-na-przykladach,pd,171568.jpg" />
+    <Content Include="covers\beyond-bullet-points-magia-ukryta,pd,317371.jpg" />
+    <Content Include="covers\bezpieczenstwo-aplikacji-tworzonych-w,pd,162204.jpg" />
+    <Content Include="covers\bezpieczenstwo-microsoft-windows,pd,123224.jpg" />
+    <Content Include="covers\bezpieczenstwo-protokolu-tcpip,pd,34899.jpg" />
+    <Content Include="covers\bezpieczenstwo-telekomunikacji-praktyka,pd,9696.jpg" />
+    <Content Include="covers\bezpieczne-korzystanie-z-internetu,pd,319526.jpg" />
+    <Content Include="covers\biblia-windows-server-2012-podrecznik,pd,340365.jpg" />
+    <Content Include="covers\biblioteka-20,pd,429961.jpg" />
+    <Content Include="covers\bios-leksykon,pd,300451.jpg" />
+    <Content Include="covers\bios-leksykon-kieszonkowy,pd,79372.jpg" />
+    <Content Include="covers\bios-leksykon-kieszonkowy-wydanie-ii-B,pd,132925.jpg" />
+    <Content Include="covers\bios-przewodnik,pd,79206.jpg" />
+    <Content Include="covers\bios-przewodnik-B,pd,145776.jpg" />
+    <Content Include="covers\bios-przewodnik-wydanie-ii-E,pd,134771.jpg" />
+    <Content Include="covers\bios-przewodnik-wydanie-iv,pd,235659.jpg" />
+    <Content Include="covers\blad-powerpointa,pd,208258.jpg" />
+    <Content Include="covers\blitzmarketing,pd,268868.jpg" />
+    <Content Include="covers\bubble,pd,449175.jpg" />
+    <Content Include="covers\budowa-i-obsluga-domowych-sieci,pd,249548.jpg" />
+    <Content Include="covers\budowa-robotow-dla-poczatkujacych,pd,314968.jpg" />
+    <Content Include="covers\budowanie-aplikacji-biznesowych-za,pd,293699.jpg" />
+    <Content Include="covers\buzz,pd,383959.jpg" />
+    <Content Include="covers\c-50-leksykon-kieszonkowy,pd,441751.jpg" />
+    <Content Include="covers\c-50-programowanie,pd,427100.jpg" />
+    <Content Include="covers\c-cwiczenia,pd,79133.jpg" />
+    <Content Include="covers\c-dla-kazdego,pd,468884.jpg" />
+    <Content Include="covers\c-dla-kazdego-B,pd,78986.jpg" />
+    <Content Include="covers\c-i-qt-wprowadzenie-do-wzorcow,pd,471159.jpg" />
+    <Content Include="covers\c-od-podszewki,pd,339392.jpg" />
+    <Content Include="covers\c-praktyczny-kurs,pd,106872.jpg" />
+    <Content Include="covers\c-programowanie,pd,78703.jpg" />
+    <Content Include="covers\c-rusz-glowa,pd,272389.jpg" />
+    <Content Include="covers\c-rusz-glowa-a,pd,409819.jpg" />
+    <Content Include="covers\c-tworzenie-aplikacji-sieciowych,pd,309458.jpg" />
+    <Content Include="covers\c-zadania-z-programowania,pd,338487.jpg" />
+    <Content Include="covers\c11-nowy-standard,pd,310411.jpg" />
+    <Content Include="covers\cakephp-1-3,pd,308016.jpg" />
+    <Content Include="covers\ccnp-route-oficjalny-przewodnik,pd,321589.jpg" />
+    <Content Include="covers\ccnp-switch-oficjalny-przewodnik,pd,321588.jpg" />
+    <Content Include="covers\ccnp-tshoot-oficjalny-przewodnik,pd,339736.jpg" />
+    <Content Include="covers\cinema-4d-a,pd,390717.jpg" />
+    <Content Include="covers\co-na-to-google,pd,191333.jpg" />
+    <Content Include="covers\co-potrafi-twoj-ipod,pd,155227.jpg" />
+    <Content Include="covers\codeigniter-zaawansowane-tworzenie,pd,381606.jpg" />
+    <Content Include="covers\com,pd,304939.jpg" />
+    <Content Include="covers\core-java-servlets-i-javaserver-pages,pd,165167.jpg" />
+    <Content Include="covers\corel-paint-shop-pro-x-podstawy,pd,78811.jpg" />
+    <Content Include="covers\corel-paintshop-pro-x4-obrobka-zdjec,pd,332438.jpg" />
+    <Content Include="covers\corel-ventura-10,pd,154592.jpg" />
+    <Content Include="covers\coreldraw-graphics-suite-x5-pl,pd,265571.jpg" />
+    <Content Include="covers\coreldraw-x6-pl,pd,344784.jpg" />
+    <Content Include="covers\cracking-jak-przed-nim-sie-bronic,pd,124032.jpg" />
+    <Content Include="covers\css-antologia-101-wskazowek-i-trikow-D,pd,79425.jpg" />
+    <Content Include="covers\css-leksykon-kieszonkowy,pd,132939.jpg" />
+    <Content Include="covers\css-nieoficjalny-podrecznik,pd,106908.jpg" />
+    <Content Include="covers\css-wedlug-erica-meyera-kolejna-odslona-C,pd,79404.jpg" />
+    <Content Include="covers\css-witryny-internetowe-szyte-na-miare,pd,154556.jpg" />
+    <Content Include="covers\css3,pd,303830.jpg" />
+    <Content Include="covers\css3-kaskadowe-arkusze-stylow,pd,366394.jpg" />
+    <Content Include="covers\css3-nieoficjalny-podrecznik,pd,434204.jpg" />
+    <Content Include="covers\css3-tworzenie-nowoczesnych-stron-www,pd,331700.jpg" />
+    <Content Include="covers\cubase-sx-3-dla-zapalencow,pd,89775.jpg" />
+    <Content Include="covers\cuda-w-przykladach,pd,307824.jpg" />
+    <Content Include="covers\cwiczenia-power-point-2003-pl,pd,146446.jpg" />
+    <Content Include="covers\cwiczenia-z-microsoft-windows-xp-home,pd,53007.jpg" />
+    <Content Include="covers\cyberlamiglowki-doktora-ecco,pd,109664.jpg" />
+    <Content Include="covers\cyfrowa-fotografia-podwodna-dla,pd,203641.jpg" />
+    <Content Include="covers\cyfrowa-rewolucja,pd,210351.jpg" />
+    <Content Include="covers\cypherpunks-wolnosc-i-przyszlosc,pd,417919.jpg" />
+    <Content Include="covers\czysty-kod,pd,212760.jpg" />
+    <Content Include="covers\daj-sie-znalezc-w-sieci,pd,263420.jpg" />
+    <Content Include="covers\dane-testowe-teoria-i-praktyka,pd,247811.jpg" />
+    <Content Include="covers\darmowe-sposoby-na-tworzenie,pd,429648.jpg" />
+    <Content Include="covers\debugowanie,pd,234595.jpg" />
+    <Content Include="covers\debugowanie-net,pd,245199.jpg" />
+    <Content Include="covers\decyzje-logistyczne-z-excelem,pd,279166.jpg" />
+    <Content Include="covers\delphi-dla-net-vademecum,pd,79301.jpg" />
+    <Content Include="covers\design-dla-hakerow-sekrety-genialnych,pd,333711.jpg" />
+    <Content Include="covers\director-mx-szybki-start,pd,79261.jpg" />
+    <Content Include="covers\domowe-sieci-komputerowe-gotowe,pd,153508.jpg" />
+    <Content Include="covers\dotknij-i-przeciagnij-projektowanie,pd,442102.jpg" />
+    <Content Include="covers\dotknij-przesun-potrzasnij,pd,331701.jpg" />
+    <Content Include="covers\dreamweaver-cs3,pd,152845.jpg" />
+    <Content Include="covers\drupal-7-a,pd,300453.jpg" />
+    <Content Include="covers\drupal-7-cwiczenia-praktyczne,pd,302020.jpg" />
+    <Content Include="covers\drupal-7-od-podstaw,pd,258395.jpg" />
+    <Content Include="covers\drupal-7-w-praktyce,pd,293074.jpg" />
+    <Content Include="covers\drupal-7-zaawansowane-programowanie,pd,300454.jpg" />
+    <Content Include="covers\drupal-poznaj-go-z-kazdej-strony,pd,238725.jpg" />
+    <Content Include="covers\dydaktyczny-system-mikroprocesorowy,pd,109140.jpg" />
+    <Content Include="covers\dylematy-cywilizacji-informatycznej,pd,14869.jpg" />
+    <Content Include="covers\dynamiczny-html-101-praktycznych,pd,227914.jpg" />
+    <Content Include="covers\dystrybucja-danych-w-sieci-internet,pd,107376.jpg" />
+    <Content Include="covers\dzwiek-cyfrowy,pd,27276.jpg" />
+    <Content Include="covers\e-commerce-a,pd,290410.jpg" />
+    <Content Include="covers\e-mail-krok-po-kroku-cd,pd,237269.jpg" />
+    <Content Include="covers\e-maile-listy-pisma-pisanie-tekstow,pd,334053.jpg" />
+    <Content Include="covers\e-publikacje-w-indesign-cs6,pd,430820.jpg" />
+    <Content Include="covers\e-uslugi-administracji-publicznej,pd,440544.jpg" />
+    <Content Include="covers\ecdl-1-modul-podstawy-technik,pd,179632.jpg" />
+    <Content Include="covers\ecdl-2-modul-uzytkowanie-komputerow,pd,206229.jpg" />
+    <Content Include="covers\ecdl-3-modul-przetwarzanie-tekstow,pd,180338.jpg" />
+    <Content Include="covers\ecdl-4-modul-arkusze-kalkulacyjne,pd,189927.jpg" />
+    <Content Include="covers\ecdl-5-modul-bazy-danych,pd,198579.jpg" />
+    <Content Include="covers\ecdl-6-modul-grafika-menedzerska,pd,199126.jpg" />
+    <Content Include="covers\ecdl-7-modul-przegladanie-stron,pd,222015.jpg" />
+    <Content Include="covers\ecdl-7-modulow-kompletny-kurs,pd,302987.jpg" />
+    <Content Include="covers\ecdl-advanced-na-skroty-cd,pd,260996.jpg" />
+    <Content Include="covers\ecdl-cad,pd,204290.jpg" />
+    <Content Include="covers\ecdl-e-obywatel,pd,282411.jpg" />
+    <Content Include="covers\ecdl-na-skroty-cd,pd,165895.jpg" />
+    <Content Include="covers\eclipse-biblioteka-swt,pd,136245.jpg" />
+    <Content Include="covers\ecuk-przetwarzanie-tekstow,pd,55783.jpg" />
+    <Content Include="covers\ecuk-uzytkowanie-komputerow,pd,32801.jpg" />
+    <Content Include="covers\edgecam-komputerowe-wspomaganie-D,pd,78776.jpg" />
+    <Content Include="covers\edytory-vi-i-vim-leksykon-kieszonkowy,pd,318627.jpg" />
+    <Content Include="covers\efektywnosc-i-skutecznosc-wdrazania,pd,180521.jpg" />
+    <Content Include="covers\ekrany-pismiennosci-o-przyjemnosciach,pd,157513.jpg" />
+    <Content Include="covers\eksploracja-danych-metody-i-algorytmy,pd,390158.jpg" />
+    <Content Include="covers\elektroniczne-techniki-cyfrowe-B,pd,142590.jpg" />
+    <Content Include="covers\elektronika-b,pd,374765.jpg" />
+    <Content Include="covers\elektronika-dla-bystrzakow,pd,302017.jpg" />
+    <Content Include="covers\elektronika-z-excelem,pd,320685.jpg" />
+    <Content Include="covers\elementarz-stylu-w-typografii-a,pd,396290.jpg" />
+    <Content Include="covers\elementy-algebry-liniowej-z-geometria-B,pd,55076.jpg" />
+    <Content Include="covers\elementy-grafiki-komputerowej,pd,33765.jpg" />
+    <Content Include="covers\elementy-logiki-i-teorii-mnogosci-dla,pd,53128.jpg" />
+    <Content Include="covers\elementy-matematyki-dyskretnej-zbior,pd,379525.jpg" />
+    <Content Include="covers\elementy-robotyki-humanoidalnej,pd,379509.jpg" />
+    <Content Include="covers\eobywatel-aktywny-uzytkownik-komputera,pd,154325.jpg" />
+    <Content Include="covers\epistemologia-informacji,pd,445145.jpg" />
+    <Content Include="covers\estetyka-ksiazki-elektronicznej-a,pd,236679.jpg" />
+    <Content Include="covers\euslugi-a-spoleczenstwo-informacyjne,pd,157539.jpg" />
+    <Content Include="covers\excel,pd,308019.jpg" />
+    <Content Include="covers\excel-101-makr-gotowych-do-uzycia,pd,418281.jpg" />
+    <Content Include="covers\excel-2003-pl-ilustrowany-przewodnik,pd,79322.jpg" />
+    <Content Include="covers\excel-2007-w-analizach-i-finansach,pd,238274.jpg" />
+    <Content Include="covers\excel-2010,pd,340254.jpg" />
+    <Content Include="covers\excel-2010-pl,pd,264050.jpg" />
+    <Content Include="covers\excel-2010-pl-a,pd,274113.jpg" />
+    <Content Include="covers\excel-2010-pl-biblia,pd,272947.jpg" />
+    <Content Include="covers\excel-2010-pl-kurs,pd,231043.jpg" />
+    <Content Include="covers\excel-2010-pl-programowanie-w-vba,pd,250056.jpg" />
+    <Content Include="covers\excel-2010-praktyczny-kurs,pd,315134.jpg" />
+    <Content Include="covers\excel-2013-pl-biblia,pd,450071.jpg" />
+    <Content Include="covers\excel-2013-pl-cwiczenia-praktyczne,pd,415642.jpg" />
+    <Content Include="covers\excel-2013-pl-formuly,pd,447300.jpg" />
+    <Content Include="covers\excel-2013-pl-kurs,pd,447783.jpg" />
+    <Content Include="covers\excel-2013-pl-programowanie-w-vba,pd,453781.jpg" />
+    <Content Include="covers\excel-2013-pl-programowanie-w-vba-dla,pd,471160.jpg" />
+    <Content Include="covers\excel-w-biurze-i-nie-tylko-D,pd,79080.jpg" />
+    <Content Include="covers\excel-w-obliczeniach-naukowych-a,pd,290409.jpg" />
+    <Content Include="covers\excel-xp-od-a-do-z,pd,52854.jpg" />
+    <Content Include="covers\exchange-2000-server,pd,15747.jpg" />
+    <Content Include="covers\execel-2007-viual-basic,pd,205066.jpg" />
+    <Content Include="covers\expression-blend,pd,260661.jpg" />
+    <Content Include="covers\facebook,pd,213275.jpg" />
+    <Content Include="covers\facebook-graph-api,pd,300459.jpg" />
+    <Content Include="covers\fedora-core-2-ksiega-eksperta,pd,135851.jpg" />
+    <Content Include="covers\fedora-i-red-hat-enterprise-linux,pd,348267.jpg" />
+    <Content Include="covers\filmy-w-divx-kompletny-poradnik-cd,pd,219218.jpg" />
+    <Content Include="covers\firefox-superprzegladarka-bez-tajemnic,pd,219219.jpg" />
+    <Content Include="covers\flash-cs3-pl,pd,165446.jpg" />
+    <Content Include="covers\flash-cs3-professional-pl-klatka-po,pd,145059.jpg" />
+    <Content Include="covers\flash-cs3-professional-pl-techniki,pd,146053.jpg" />
+    <Content Include="covers\flash-cs3cs3-pl-professional,pd,145369.jpg" />
+    <Content Include="covers\flash-cs5-pl-professional-cwiczenia,pd,300464.jpg" />
+    <Content Include="covers\flash-i-actionscript-aplikacje-3d,pd,394985.jpg" />
+    <Content Include="covers\flash-i-php,pd,216669.jpg" />
+    <Content Include="covers\flash-i-wallaby-projektowanie-animacji,pd,325531.jpg" />
+    <Content Include="covers\flash-mx-2004-same-konkrety,pd,17460.jpg" />
+    <Content Include="covers\flex-3-0,pd,208680.jpg" />
+    <Content Include="covers\fotomontaz-w-photoshopie-sekrety,pd,321394.jpg" />
+    <Content Include="covers\freebsd-7,pd,177851.jpg" />
+    <Content Include="covers\funkcje-w-excelu-w-praktyce,pd,38431.jpg" />
+    <Content Include="covers\funkcjonalnosc-aplikacji-mobilnych,pd,433575.jpg" />
+    <Content Include="covers\funkcjonalnosc-stron-internetowych,pd,360903.jpg" />
+    <Content Include="covers\geek-w-swiecie-korporacji,pd,289307.jpg" />
+    <Content Include="covers\geim,pd,338156.jpg" />
+    <Content Include="covers\gimp,pd,265183.jpg" />
+    <Content Include="covers\gimp-2-6-receptury,pd,308328.jpg" />
+    <Content Include="covers\gimp-biblia,pd,299797.jpg" />
+    <Content Include="covers\gimp-kreatywne-techniki-dla-fotografow,pd,417916.jpg" />
+    <Content Include="covers\gimp-praktyczne-projekty-B,pd,106823.jpg" />
+    <Content Include="covers\gis-w-wodociagach-i-kanalizacji,pd,125474.jpg" />
+    <Content Include="covers\git-rozproszony-system-kontroli-wersji,pd,373093.jpg" />
+    <Content Include="covers\google-adwords-skuteczna-kampania,pd,322757.jpg" />
+    <Content Include="covers\google-analytics-dla-marketingowcow,pd,449307.jpg" />
+    <Content Include="covers\google-app-engine-kod-w-chmurze,pd,312049.jpg" />
+    <Content Include="covers\google-app-engine-tworzenie-wydajnych,pd,339205.jpg" />
+    <Content Include="covers\grafika-fizyka-metody-numeryczne,pd,212050.jpg" />
+    <Content Include="covers\grafika-menedzerska-i-prezentacyjna,pd,10104.jpg" />
+    <Content Include="covers\grafika-menedzerska-i-prezentacyjna-C,pd,109146.jpg" />
+    <Content Include="covers\grafika-w-biznesie-projektowanie,pd,132920.jpg" />
+    <Content Include="covers\grafika-wektorowa,pd,311672.jpg" />
+    <Content Include="covers\hacking-i-testy-penetracyjne-podstawy,pd,417228.jpg" />
+    <Content Include="covers\hakowanie-androida-kompletny,pd,358693.jpg" />
+    <Content Include="covers\head-first-ajax,pd,208286.jpg" />
+    <Content Include="covers\head-first-javascript,pd,177850.jpg" />
+    <Content Include="covers\head-first-php-mysql,pd,217278.jpg" />
+    <Content Include="covers\head-first-ruby-on-rails,pd,230647.jpg" />
+    <Content Include="covers\head-first-web-design,pd,218069.jpg" />
+    <Content Include="covers\hello-android,pd,289677.jpg" />
+    <Content Include="covers\hello-flex-4,pd,242405.jpg" />
+    <Content Include="covers\html-i-css-zaprojektuj-i-zbuduj,pd,467168.jpg" />
+    <Content Include="covers\html-i-xhtml-krok-po-kroku,pd,71177.jpg" />
+    <Content Include="covers\html-xhtml-i-css-biblia-B,pd,196193.jpg" />
+    <Content Include="covers\html5,pd,308018.jpg" />
+    <Content Include="covers\html5-canvas-receptury,pd,369019.jpg" />
+    <Content Include="covers\html5-i-css3,pd,290187.jpg" />
+    <Content Include="covers\html5-i-css3-praktyczne-projekty,pd,398490.jpg" />
+    <Content Include="covers\html5-i-css3-zaawansowane-wzorce,pd,358101.jpg" />
+    <Content Include="covers\html5-nieoficjalny-podrecznik,pd,334716.jpg" />
+    <Content Include="covers\html5-podrecznik-programisty,pd,383661.jpg" />
+    <Content Include="covers\html5-programowanie-aplikacji,pd,326696.jpg" />
+    <Content Include="covers\html5-przewodnik-encyklopedyczny,pd,403046.jpg" />
+    <Content Include="covers\html5-rusz-glowa,pd,339861.jpg" />
+    <Content Include="covers\html5-tworzenie-gier,pd,347086.jpg" />
+    <Content Include="covers\html5-zaawansowane-programowanie,pd,375184.jpg" />
+    <Content Include="covers\imperium-aplikacji-niech-technologia,pd,428420.jpg" />
+    <Content Include="covers\implementacja-i-obsluga-microsoft-sql,pd,260660.jpg" />
+    <Content Include="covers\implementowanie-microsoft-dynamics-ax,pd,424923.jpg" />
+    <Content Include="covers\indeksowanie-tresci,pd,324146.jpg" />
+    <Content Include="covers\indesign-cs3cs3-pl-szybki-start,pd,159659.jpg" />
+    <Content Include="covers\indesign-i-tekst,pd,257127.jpg" />
+    <Content Include="covers\indesign-projekty-z-klasa,pd,333712.jpg" />
+    <Content Include="covers\informatyczne-narzedzia-procesow,pd,242117.jpg" />
+    <Content Include="covers\informatyka-dla-ekonomistow-przyklady-i,pd,100049.jpg" />
+    <Content Include="covers\informatyka-gospodarcza,pd,242918.jpg" />
+    <Content Include="covers\informatyka-gospodarcza-b,pd,242920.jpg" />
+    <Content Include="covers\informatyka-gospodarcza-c,pd,242921.jpg" />
+    <Content Include="covers\informatyka-i-telekomunikacja,pd,356822.jpg" />
+    <Content Include="covers\informatyka-prawnicza,pd,279472.jpg" />
+    <Content Include="covers\informatyka-w-edukacji-i-kulturze,pd,372579.jpg" />
+    <Content Include="covers\informatyka-w-turystyce-i-rekreacji,pd,372686.jpg" />
+    <Content Include="covers\informatyka-w-zarzadzaniu-B,pd,97037.jpg" />
+    <Content Include="covers\informatyzacja-administracji-publicznej,pd,160591.jpg" />
+    <Content Include="covers\inkscape-podstawowa-obsluga-programu,pd,359357.jpg" />
+    <Content Include="covers\instrumenty-bankowosci-elektronicznej,pd,56694.jpg" />
+    <Content Include="covers\integracja-php-z-windows,pd,375185.jpg" />
+    <Content Include="covers\integrowanie-oracle-e-business-suite,pd,455299.jpg" />
+    <Content Include="covers\inteligentny-dom-automatyzacja,pd,398968.jpg" />
+    <Content Include="covers\intensywne-wprowadzenie-do-hackingu-5,pd,291258.jpg" />
+    <Content Include="covers\interakcja-czlowiek-komputer,pd,379522.jpg" />
+    <Content Include="covers\interaktywna-wizualizacja-danych,pd,471161.jpg" />
+    <Content Include="covers\interfejs-dla-osob-z-dysfunkcja-wzroku,pd,414437.jpg" />
+    <Content Include="covers\interfejsy,pd,240653.jpg" />
+    <Content Include="covers\interfejsy-a,pd,419302.jpg" />
+    <Content Include="covers\internet,pd,203745.jpg" />
+    <Content Include="covers\internet-a-konkurencyjnosc-bankow-w,pd,47589.jpg" />
+    <Content Include="covers\internet-b,pd,264054.jpg" />
+    <Content Include="covers\internet-c,pd,302216.jpg" />
+    <Content Include="covers\internet-cwiczenia-praktyczne-wydanie-a,pd,235293.jpg" />
+    <Content Include="covers\internet-cwiczenia-praktyczne-wydanie-c,pd,79517.jpg" />
+    <Content Include="covers\internet-dla-poczatkujacych,pd,302863.jpg" />
+    <Content Include="covers\internet-dla-seniorow-c,pd,383908.jpg" />
+    <Content Include="covers\internet-ilustrowany-przewodnik,pd,267645.jpg" />
+    <Content Include="covers\internet-ilustrowany-przewodnik-C,pd,79478.jpg" />
+    <Content Include="covers\internet-jak-surfowac-bezpiecznie,pd,79209.jpg" />
+    <Content Include="covers\internet-krok-po-kroku,pd,211118.jpg" />
+    <Content Include="covers\internet-kurs,pd,89778.jpg" />
+    <Content Include="covers\internet-kurs-D,pd,79187.jpg" />
+    <Content Include="covers\internet-latwy-start-dla-seniorow,pd,125498.jpg" />
+    <Content Include="covers\internet-po-piecdziesiatce,pd,190171.jpg" />
+    <Content Include="covers\internet-w-marketingu,pd,17202.jpg" />
+    <Content Include="covers\internet-w-pigulce,pd,380163.jpg" />
+    <Content Include="covers\internet-wiedziec-wiecej,pd,6142.jpg" />
+    <Content Include="covers\internetowy-detektyw,pd,134552.jpg" />
+    <Content Include="covers\inzynieria-oprogramowania-sieci,pd,117097.jpg" />
+    <Content Include="covers\inzynieria-oprogramowania-w-ujeciu,pd,263021.jpg" />
+    <Content Include="covers\ios-5-podrecznik-programisty,pd,365025.jpg" />
+    <Content Include="covers\ios-5-programowanie-receptury,pd,353352.jpg" />
+    <Content Include="covers\iphone,pd,311881.jpg" />
+    <Content Include="covers\iphone-3g,pd,161866.jpg" />
+    <Content Include="covers\iwoz,pd,178360.jpg" />
+    <Content Include="covers\j2ee-wzorce-projektowe-wydanie-2,pd,79200.jpg" />
+    <Content Include="covers\j2me-praktyczne-projekty,pd,78838.jpg" />
+    <Content Include="covers\jadro-linuksa-przewodnik-programisty,pd,474350.jpg" />
+    <Content Include="covers\jak-dzwonic-za-grosze-wszystko-o,pd,219224.jpg" />
+    <Content Include="covers\jak-nie-bac-sie-internetu,pd,32322.jpg" />
+    <Content Include="covers\jak-stworzyc-najlepszy-blog-wordpress,pd,102126.jpg" />
+    <Content Include="covers\jak-stworzyc-wlasny-blog,pd,161002.jpg" />
+    <Content Include="covers\jak-stworzyc-wlasny-xfacebook,pd,322533.jpg" />
+    <Content Include="covers\jak-zarabiac-na-aplikacjach-i-grach,pd,352836.jpg" />
+    <Content Include="covers\java,pd,161335.jpg" />
+    <Content Include="covers\java-2-podstawy,pd,79096.jpg" />
+    <Content Include="covers\java-2-techniki-zaawansowane,pd,79381.jpg" />
+    <Content Include="covers\java-a,pd,292813.jpg" />
+    <Content Include="covers\java-cwiczenia-praktyczne,pd,145763.jpg" />
+    <Content Include="covers\java-cwiczenia-zaawansowane,pd,307908.jpg" />
+    <Content Include="covers\java-dla-programistow-c-i-c,pd,34054.jpg" />
+    <Content Include="covers\java-ee-6-leksykon-kieszonkowy,pd,409820.jpg" />
+    <Content Include="covers\java-ee-6-programowanie-aplikacji-www,pd,232035.jpg" />
+    <Content Include="covers\java-ee-6-przewodnik,pd,337449.jpg" />
+    <Content Include="covers\java-ee-6-zaawansowany-przewodnik,pd,432091.jpg" />
+    <Content Include="covers\java-me-tworzenie-zaawansowanych,pd,315514.jpg" />
+    <Content Include="covers\java-podstawy,pd,148380.jpg" />
+    <Content Include="covers\java-przewodnik-dla-poczatkujacych,pd,323867.jpg" />
+    <Content Include="covers\java-rusz-glowa,pd,240904.jpg" />
+    <Content Include="covers\java-techniki-zaawansowane,pd,457810.jpg" />
+    <Content Include="covers\javascript-aplikacje-www,pd,339393.jpg" />
+    <Content Include="covers\javascript-cwiczenia-praktyczne-a,pd,399978.jpg" />
+    <Content Include="covers\javascript-cwiczenia-praktyczne-wydanie-C,pd,78875.jpg" />
+    <Content Include="covers\javascript-dla-programistow-php,pd,464628.jpg" />
+    <Content Include="covers\javascript-i-jquery,pd,476773.jpg" />
+    <Content Include="covers\javascript-i-jquery-nieoficjalny,pd,358694.jpg" />
+    <Content Include="covers\javascript-i-php-dla-pasjonatow,pd,351815.jpg" />
+    <Content Include="covers\javascript-programowanie-obiektowe,pd,221552.jpg" />
+    <Content Include="covers\javascript-wzorce,pd,317370.jpg" />
+    <Content Include="covers\javaserver-faces-i-eclipse-galileo,pd,237854.jpg" />
+    <Content Include="covers\jeszcze-wydajniejsze-witryny-internetowe,pd,222737.jpg" />
+    <Content Include="covers\jezyk-ansi-c-programowanie,pd,226189.jpg" />
+    <Content Include="covers\jezyk-c-dla-mikrokontrolerow-avr,pd,288098.jpg" />
+    <Content Include="covers\jezyk-c-i-przetwarzanie-wspolbiezne,pd,391171.jpg" />
+    <Content Include="covers\jezyk-c-standard-iso-w-praktyce,pd,146934.jpg" />
+    <Content Include="covers\jezyk-c-szkola-programowania-a,pd,358100.jpg" />
+    <Content Include="covers\jezyk-c-szkola-programowania-wydanie-v-I,pd,132899.jpg" />
+    <Content Include="covers\jezyk-inzynierii-systemow-sysml,pd,229695.jpg" />
+    <Content Include="covers\jezyk-programowania-delphi,pd,344490.jpg" />
+    <Content Include="covers\joomla-1-5-od-kuchni,pd,229950.jpg" />
+    <Content Include="covers\joomla-1-6,pd,284663.jpg" />
+    <Content Include="covers\joomla-1-6-cwiczenia,pd,288772.jpg" />
+    <Content Include="covers\joomla-25-praktyczny-kurs,pd,426088.jpg" />
+    <Content Include="covers\joomla-a,pd,217065.jpg" />
+    <Content Include="covers\joomla-b,pd,225743.jpg" />
+    <Content Include="covers\joomla-biblia,pd,235660.jpg" />
+    <Content Include="covers\joomla-biblia-a,pd,455974.jpg" />
+    <Content Include="covers\joomla-cwiczenia-oficjalny-podrecznik,pd,323868.jpg" />
+    <Content Include="covers\joomla-darmowy-system-cms,pd,125491.jpg" />
+    <Content Include="covers\joomla-oficjalny-podrecznik,pd,320146.jpg" />
+    <Content Include="covers\joomla-praktyczne-projekty,pd,331132.jpg" />
+    <Content Include="covers\joomla-tworzenie-stron-www,pd,195524.jpg" />
+    <Content Include="covers\jquery,pd,300452.jpg" />
+    <Content Include="covers\jquery-1-3-wprowadzenie,pd,230287.jpg" />
+    <Content Include="covers\jquery-cwiczenia-praktyczne,pd,415892.jpg" />
+    <Content Include="covers\jquery-jquery-ui-oraz-jquery-mobile,pd,445599.jpg" />
+    <Content Include="covers\jquery-kod-doskonaly,pd,345821.jpg" />
+    <Content Include="covers\jquery-mobile,pd,357855.jpg" />
+    <Content Include="covers\jquery-od-nowicjusza-do-wojownika-ninja,pd,319077.jpg" />
+    <Content Include="covers\jquery-rusz-glowa,pd,337190.jpg" />
+    <Content Include="covers\jquery-tworzenie-animowanych-witryn,pd,402109.jpg" />
+    <Content Include="covers\klastry-pracy-awaryjnej-w-srodowisku,pd,235045.jpg" />
+    <Content Include="covers\klatka-po-klatce,pd,311815.jpg" />
+    <Content Include="covers\knoppix-leksykon-kieszonkowy-D,pd,78731.jpg" />
+    <Content Include="covers\kod-ukryty-jezyk-sprzetu-komputerowego,pd,51937.jpg" />
+    <Content Include="covers\kombinatoryka-dla-programistow,pd,34536.jpg" />
+    <Content Include="covers\kompendium-dtp,pd,174366.jpg" />
+    <Content Include="covers\komponenty-tworzace-systemu-drupal,pd,303833.jpg" />
+    <Content Include="covers\kompresja-dzwieku-i-obrazu-wideo-real,pd,170229.jpg" />
+    <Content Include="covers\komputer,pd,167748.jpg" />
+    <Content Include="covers\komputer-dla-kazdego,pd,235601.jpg" />
+    <Content Include="covers\komputer-dla-seniorow-a,pd,383910.jpg" />
+    <Content Include="covers\komputer-dla-seniorow-B,pd,189607.jpg" />
+    <Content Include="covers\komputer-latwy-start-dla-seniorow,pd,126030.jpg" />
+    <Content Include="covers\komputer-pc-cwiczenia-praktyczne,pd,78835.jpg" />
+    <Content Include="covers\komputer-pc-podstawy-obslugi-dla,pd,237142.jpg" />
+    <Content Include="covers\komputer-pc-poradnik-bez-kantow,pd,127972.jpg" />
+    <Content Include="covers\komputer-po-piecdziesiatce,pd,190170.jpg" />
+    <Content Include="covers\komputer-rozwiazywanie-problemow-dla,pd,312923.jpg" />
+    <Content Include="covers\komputer-w-domu,pd,277032.jpg" />
+    <Content Include="covers\komputerowe-metody-analizy-ukladow,pd,125356.jpg" />
+    <Content Include="covers\komputerowe-systemy-pomiarowe,pd,72923.jpg" />
+    <Content Include="covers\komputerowo-wspomagane-projektowanie,pd,28156.jpg" />
+    <Content Include="covers\komputerowo-wspomagane-wytwarzanie,pd,107650.jpg" />
+    <Content Include="covers\komputerowy-warsztat-projektanta,pd,163651.jpg" />
+    <Content Include="covers\komputery-spolka-z-oo,pd,34312.jpg" />
+    <Content Include="covers\komunikacja-komputerowa,pd,135230.jpg" />
+    <Content Include="covers\konfigurowanie-active-directory-a,pd,306259.jpg" />
+    <Content Include="covers\konfigurowanie-infrastruktury-sieciowej-a,pd,307837.jpg" />
+    <Content Include="covers\konfigurowanie-windows-8,pd,418351.jpg" />
+    <Content Include="covers\kontrola-wersji-z-systemem-git,pd,472904.jpg" />
+    <Content Include="covers\kopiowanie-plyt-od-a-do-z,pd,48263.jpg" />
+    <Content Include="covers\kradziez-tozsamosci-terroryzm,pd,394975.jpg" />
+    <Content Include="covers\kryptografia-i-bezpieczenstwo-sieci,pd,303826.jpg" />
+    <Content Include="covers\kryptografia-i-bezpieczenstwo-sieci-a,pd,308764.jpg" />
+    <Content Include="covers\kryptografia-stosowana,pd,27573.jpg" />
+    <Content Include="covers\krzywe-eliptyczne-w-kryptografii,pd,34033.jpg" />
+    <Content Include="covers\ksiega-odkrywcow-lego-mindstorms-nxt,pd,426089.jpg" />
+    <Content Include="covers\ksztalcenie-na-odleglosc-podstawy,pd,121928.jpg" />
+    <Content Include="covers\kuloodporne-strony-internetowe-jak-E,pd,138138.jpg" />
+    <Content Include="covers\kurs-photoshop-elements-9,pd,316611.jpg" />
+    <Content Include="covers\lamanie-i-zabezpieczanie-aplikacji,pd,358102.jpg" />
+    <Content Include="covers\latex-leksykon-kieszonkowy,pd,145781.jpg" />
+    <Content Include="covers\lego-technic-w-praktyce,pd,419926.jpg" />
+    <Content Include="covers\lekcja-programowania,pd,293398.jpg" />
+    <Content Include="covers\lifehacker-jak-zyc-i-pracowac-z-glowa,pd,321145.jpg" />
+    <Content Include="covers\lifehacker-jak-zyc-i-pracowac-z-glowa-a,pd,373094.jpg" />
+    <Content Include="covers\linksys-sieci-oficjalny-przewodnik,pd,54139.jpg" />
+    <Content Include="covers\linq-to-objects-w-c-4-0,pd,316514.jpg" />
+    <Content Include="covers\linux-b,pd,149835.jpg" />
+    <Content Include="covers\linux-biblia,pd,306078.jpg" />
+    <Content Include="covers\linux-i-galanteria-scsi,pd,124107.jpg" />
+    <Content Include="covers\linux-jak-dostroic-bestie-do-swoich,pd,345822.jpg" />
+    <Content Include="covers\linux-komendy-i-polecenia-a,pd,278766.jpg" />
+    <Content Include="covers\linux-komendy-i-polecenia-praktyczne,pd,79437.jpg" />
+    <Content Include="covers\linux-leksykon-kieszonkowy,pd,106836.jpg" />
+    <Content Include="covers\linux-programowanie-w-powloce,pd,452291.jpg" />
+    <Content Include="covers\linux-w-biurze-i-nie-tylko,pd,217544.jpg" />
+    <Content Include="covers\logo-love-design,pd,230021.jpg" />
+    <Content Include="covers\mac-os-x-104-tiger-podrecznik-D,pd,78832.jpg" />
+    <Content Include="covers\mac-os-x-107-lion-podrecznik,pd,328755.jpg" />
+    <Content Include="covers\mac-os-x-leopard,pd,154930.jpg" />
+    <Content Include="covers\mac-os-x-leopard-pl,pd,152843.jpg" />
+    <Content Include="covers\mac-os-x-snow-leopard,pd,267308.jpg" />
+    <Content Include="covers\mac-os-x-tiger-cwiczenia-praktyczne-B,pd,79506.jpg" />
+    <Content Include="covers\mac-os-x-tiger-skuteczne-rozwiazania,pd,128443.jpg" />
+    <Content Include="covers\macpodrecznik,pd,146769.jpg" />
+    <Content Include="covers\macromedia-dreamweaver-8-z-asp-php-i-D,pd,78742.jpg" />
+    <Content Include="covers\macromedia-flash-8-actionscript-D,pd,78745.jpg" />
+    <Content Include="covers\macromedia-flash-8-professional-ksiega-D,pd,78759.jpg" />
+    <Content Include="covers\mambo-cwiczenia,pd,108054.jpg" />
+    <Content Include="covers\mambo-tworzenie-edycja-i-zarzadzanie,pd,146311.jpg" />
+    <Content Include="covers\mambo-tworzenie-wydajnych-serwisow-D,pd,78858.jpg" />
+    <Content Include="covers\mandrake-linux-E,pd,132916.jpg" />
+    <Content Include="covers\mandriva-cwiczenia-D,pd,78861.jpg" />
+    <Content Include="covers\mandriva-linux,pd,278705.jpg" />
+    <Content Include="covers\mandrivalinux-pierwsze-starcie,pd,106896.jpg" />
+    <Content Include="covers\maple-podrecznik,pd,312050.jpg" />
+    <Content Include="covers\matematyka-finansowa-w-praktyce,pd,200248.jpg" />
+    <Content Include="covers\mathcad-od-obliczen-do-programowania,pd,310994.jpg" />
+    <Content Include="covers\matlab-7-dla-naukowcow-i-inzynierow,pd,80872.jpg" />
+    <Content Include="covers\maya-2011,pd,286456.jpg" />
+    <Content Include="covers\metasploit-przewodnik-po-testach,pd,378604.jpg" />
+    <Content Include="covers\metoda-monte-carlo-w-procesie,pd,456282.jpg" />
+    <Content Include="covers\metodologia-i-techniki-programowania,pd,121930.jpg" />
+    <Content Include="covers\metody-i-narzedzia-projektowania,pd,213189.jpg" />
+    <Content Include="covers\metody-i-techniki-sztucznej-B,pd,192799.jpg" />
+    <Content Include="covers\metody-komputerowe-w-badaniach,pd,369361.jpg" />
+    <Content Include="covers\metody-numeryczne-dla-inzynierow,pd,143897.jpg" />
+    <Content Include="covers\metody-numeryczne-w-cbuilder-E,pd,132918.jpg" />
+    <Content Include="covers\metody-optymalizacji-z-matlab,pd,206518.jpg" />
+    <Content Include="covers\metodyka-wprowadzania-oprogramowania-na,pd,33986.jpg" />
+    <Content Include="covers\metodyki-zarzadzania-projektami,pd,53849.jpg" />
+    <Content Include="covers\microsoft-access,pd,256788.jpg" />
+    <Content Include="covers\microsoft-access-2010-krok-po-kroku,pd,318016.jpg" />
+    <Content Include="covers\microsoft-access-2010-pl,pd,279093.jpg" />
+    <Content Include="covers\microsoft-access-2013-krok-po-kroku,pd,400474.jpg" />
+    <Content Include="covers\microsoft-excel-2007-pl-wykresy-jako,pd,144718.jpg" />
+    <Content Include="covers\microsoft-excel-2010-analiza,pd,291923.jpg" />
+    <Content Include="covers\microsoft-excel-2010-krok-po-kroku,pd,315042.jpg" />
+    <Content Include="covers\microsoft-excel-2013-krok-po-kroku,pd,404151.jpg" />
+    <Content Include="covers\microsoft-excel-analiza-i-modelowanie,pd,260083.jpg" />
+    <Content Include="covers\microsoft-exchange-server-2007,pd,153389.jpg" />
+    <Content Include="covers\microsoft-exchange-server-2010,pd,256858.jpg" />
+    <Content Include="covers\microsoft-exchange-server-2013,pd,448221.jpg" />
+    <Content Include="covers\microsoft-internet-security-and,pd,256600.jpg" />
+    <Content Include="covers\microsoft-office-excel-2007-cd,pd,256593.jpg" />
+    <Content Include="covers\microsoft-office-excel-2010,pd,312586.jpg" />
+    <Content Include="covers\microsoft-office-project-2007-cd,pd,256595.jpg" />
+    <Content Include="covers\microsoft-office-word-2007-cd,pd,256596.jpg" />
+    <Content Include="covers\microsoft-office-word-2007-krok-po,pd,109747.jpg" />
+    <Content Include="covers\microsoft-powerpoint-2010-krok-po-kroku,pd,315043.jpg" />
+    <Content Include="covers\microsoft-powerpoint-2013-krok-po-kroku,pd,389827.jpg" />
+    <Content Include="covers\microsoft-project-2010,pd,309294.jpg" />
+    <Content Include="covers\microsoft-project-2010-krok-po-kroku,pd,403656.jpg" />
+    <Content Include="covers\microsoft-project-2013-krok-po-kroku,pd,410915.jpg" />
+    <Content Include="covers\microsoft-sharepoint-2010-pl,pd,289115.jpg" />
+    <Content Include="covers\microsoft-sharepoint-2010-poradnik,pd,256568.jpg" />
+    <Content Include="covers\microsoft-sharepoint-2013-krok-po-kroku,pd,448218.jpg" />
+    <Content Include="covers\microsoft-small-business-server-2003,pd,106851.jpg" />
+    <Content Include="covers\microsoft-sql-server-2005-od-srodka-a,pd,256879.jpg" />
+    <Content Include="covers\microsoft-sql-server-2008-od-srodka,pd,256577.jpg" />
+    <Content Include="covers\microsoft-sql-server-2008-od-srodka-a,pd,257118.jpg" />
+    <Content Include="covers\microsoft-sql-server-2012,pd,328201.jpg" />
+    <Content Include="covers\microsoft-sql-server-2012-analysis,pd,350796.jpg" />
+    <Content Include="covers\microsoft-sql-server-2012-integration,pd,355855.jpg" />
+    <Content Include="covers\microsoft-sql-server-2012-krok-po-kroku,pd,410916.jpg" />
+    <Content Include="covers\microsoft-sql-server-2012-optymalizacja,pd,335264.jpg" />
+    <Content Include="covers\microsoft-sql-server-2012-podstawy,pd,346629.jpg" />
+    <Content Include="covers\microsoft-sql-server-modelowanie,pd,314653.jpg" />
+    <Content Include="covers\microsoft-system-center-virtual-machine,pd,437274.jpg" />
+    <Content Include="covers\microsoft-visual-basic-2010,pd,257124.jpg" />
+    <Content Include="covers\microsoft-visual-c-2005-express-edition,pd,256601.jpg" />
+    <Content Include="covers\microsoft-visual-c-2008-a,pd,201775.jpg" />
+    <Content Include="covers\microsoft-visual-c-2008-b,pd,236191.jpg" />
+    <Content Include="covers\microsoft-visual-c-2008-express-edition,pd,260662.jpg" />
+    <Content Include="covers\microsoft-visual-c-2010,pd,256567.jpg" />
+    <Content Include="covers\microsoft-visual-c-2012-krok-po-kroku,pd,400475.jpg" />
+    <Content Include="covers\microsoft-visual-c-2012-praktyczne,pd,367194.jpg" />
+    <Content Include="covers\microsoft-visual-c-2013-krok-po-kroku,pd,470450.jpg" />
+    <Content Include="covers\microsoft-visual-studio-2005-ksiega,pd,106875.jpg" />
+    <Content Include="covers\microsoft-visual-studio-2008,pd,180967.jpg" />
+    <Content Include="covers\microsoft-visual-studio-2010,pd,282327.jpg" />
+    <Content Include="covers\microsoft-visual-studio-2012,pd,426090.jpg" />
+    <Content Include="covers\microsoft-visual-studio-2012-a,pd,459848.jpg" />
+    <Content Include="covers\microsoft-windows-server-20032008,pd,233196.jpg" />
+    <Content Include="covers\microsoft-windows-server-2008,pd,256587.jpg" />
+    <Content Include="covers\microsoft-windows-server-2008-r2,pd,256862.jpg" />
+    <Content Include="covers\microsoft-windows-vista,pd,190172.jpg" />
+    <Content Include="covers\microsoft-windows-workflow-foundation,pd,257139.jpg" />
+    <Content Include="covers\microsoft-word-2010,pd,312582.jpg" />
+    <Content Include="covers\microsoft-word-2010-krok-po-kroku,pd,315041.jpg" />
+    <Content Include="covers\microsoft-word-2013-krok-po-kroku,pd,412406.jpg" />
+    <Content Include="covers\microsoft-xna-game-studio-4-0,pd,320500.jpg" />
+    <Content Include="covers\miedzy-porzadkiem-a-chaosem,pd,76120.jpg" />
+    <Content Include="covers\mikroformaty-wprowadzenie,pd,241817.jpg" />
+    <Content Include="covers\mikrokontrolery-pic-w-praktycznych,pd,311413.jpg" />
+    <Content Include="covers\minecraft,pd,467161.jpg" />
+    <Content Include="covers\mistrz-czystego-kodu,pd,445600.jpg" />
+    <Content Include="covers\mistrz-php-pisz-nowoczesny-kod,pd,338195.jpg" />
+    <Content Include="covers\mistrz-programowania,pd,227804.jpg" />
+    <Content Include="covers\mistrzowska-edycja-zdjec-a,pd,269143.jpg" />
+    <Content Include="covers\mity-bezpieczenstwa-it,pd,227242.jpg" />
+    <Content Include="covers\mobile-web-development-smashing,pd,450072.jpg" />
+    <Content Include="covers\mobile-web-rusz-glowa,pd,381293.jpg" />
+    <Content Include="covers\modelowanie-3d-w-programie-autocad,pd,438522.jpg" />
+    <Content Include="covers\modelowanie-i-wymiarowanie-ruchomych,pd,164881.jpg" />
+    <Content Include="covers\modelowanie-symulacja-i-prognozowanie,pd,127991.jpg" />
+    <Content Include="covers\modelowanie-systemow-informatycznych-w,pd,113967.jpg" />
+    <Content Include="covers\modelowanie-wnetrz-w-3d,pd,242864.jpg" />
+    <Content Include="covers\montaz-komputera-pc,pd,183650.jpg" />
+    <Content Include="covers\montaz-komputera-pc-ilustrowany,pd,233197.jpg" />
+    <Content Include="covers\montaz-komputera-pc-ilustrowany-C,pd,79494.jpg" />
+    <Content Include="covers\moodle,pd,295796.jpg" />
+    <Content Include="covers\moodle-a,pd,303825.jpg" />
+    <Content Include="covers\moodle-cwiczenia-praktyczne,pd,358692.jpg" />
+    <Content Include="covers\morfologia-matematyczna-w-teledetekcji,pd,223934.jpg" />
+    <Content Include="covers\mroczny-rynek-hakerzy-i-nowa-mafia,pd,410655.jpg" />
+    <Content Include="covers\ms-office-2003-pl-w-biznesie-i-i-ii,pd,78822.jpg" />
+    <Content Include="covers\ms-office-2013365-pl-w-biurze-i-nie,pd,417229.jpg" />
+    <Content Include="covers\ms-office-xp2003-pl-w-biurze-i,pd,78820.jpg" />
+    <Content Include="covers\ms-project-kurs-podstawowy,pd,102125.jpg" />
+    <Content Include="covers\multimedia-podstawy-teoretyczne,pd,379480.jpg" />
+    <Content Include="covers\mysl-jak-programista,pd,427101.jpg" />
+    <Content Include="covers\myslenie-obiektowe-w-programowaniu,pd,202457.jpg" />
+    <Content Include="covers\mysql-darmowa-baza-danych-cwiczenia-D,pd,132907.jpg" />
+    <Content Include="covers\nagrywanie-plyt-cd-cwiczenia,pd,159925.jpg" />
+    <Content Include="covers\nagrywanie-plyt-cd-i-dvd-ilustrowany-C,pd,79477.jpg" />
+    <Content Include="covers\nagrywanie-plyt-cd-i-dvd-kurs-cd,pd,106866.jpg" />
+    <Content Include="covers\nagrywanie-plyt-cd-w-windows-i-linuksie,pd,78979.jpg" />
+    <Content Include="covers\narzedzia-ulatwiajace-myslenie,pd,34826.jpg" />
+    <Content Include="covers\naucz-sie-sam,pd,177212.jpg" />
+    <Content Include="covers\naucz-sie-sam-photoshop-cs4,pd,223072.jpg" />
+    <Content Include="covers\nero-8-nagrywanie-plyt-cd-i-dvd,pd,135857.jpg" />
+    <Content Include="covers\net-framework-20-zaawansowane,pd,106853.jpg" />
+    <Content Include="covers\netlor,pd,467495.jpg" />
+    <Content Include="covers\niesamowite-maszyny-symulator-kopalni,pd,441088.jpg" />
+    <Content Include="covers\notebook-latwy-start-dla-seniorow,pd,125499.jpg" />
+    <Content Include="covers\nowe-metody-programowania-tom,pd,379484.jpg" />
+    <Content Include="covers\nowe-metody-programowania-tom-2,pd,379483.jpg" />
+    <Content Include="covers\nowoczesne-technologie-w-informatyce,pd,225181.jpg" />
+    <Content Include="covers\nowoczesny-jezyk-javascript,pd,386941.jpg" />
+    <Content Include="covers\nowy-profesjonalizm,pd,205715.jpg" />
+    <Content Include="covers\obiektowe-bazy-danych-modele-danych,pd,34488.jpg" />
+    <Content Include="covers\objective-c-leksykon-profesjonalisty,pd,326700.jpg" />
+    <Content Include="covers\objective-c-podstawy,pd,325198.jpg" />
+    <Content Include="covers\objective-c-vademecum-profesjonalisty,pd,306779.jpg" />
+    <Content Include="covers\obraz-cyfrowy,pd,297192.jpg" />
+    <Content Include="covers\obrobka-zdjec-cyfrowych,pd,179565.jpg" />
+    <Content Include="covers\ochrona-systemow-windows,pd,16168.jpg" />
+    <Content Include="covers\od-empatii-do-cyberprzestrzeni,pd,309962.jpg" />
+    <Content Include="covers\od-matematyki-do-programowania,pd,297280.jpg" />
+    <Content Include="covers\odkrywanie-wiedzy-z-danych-a,pd,111745.jpg" />
+    <Content Include="covers\office-2007,pd,277031.jpg" />
+    <Content Include="covers\office-2010,pd,303602.jpg" />
+    <Content Include="covers\office-2010-krok-po-kroku,pd,322856.jpg" />
+    <Content Include="covers\office-2010-pl-a,pd,282324.jpg" />
+    <Content Include="covers\office-2013,pd,455746.jpg" />
+    <Content Include="covers\ografia-impedancyjna,pd,53129.jpg" />
+    <Content Include="covers\okablowanie-strukturalne-sieci,pd,146910.jpg" />
+    <Content Include="covers\oko-w-oko-z-adobe-photoshop-cs3,pd,116267.jpg" />
+    <Content Include="covers\opengl-ksiega-eksperta,pd,274946.jpg" />
+    <Content Include="covers\openoffice-11x-uxpl,pd,79303.jpg" />
+    <Content Include="covers\openoffice-20-pl-funkcje-arkusza,pd,110183.jpg" />
+    <Content Include="covers\openoffice-20-w-szkole-i-nie-tylko,pd,121583.jpg" />
+    <Content Include="covers\openoffice-ux-pl-3-1,pd,208291.jpg" />
+    <Content Include="covers\openofficeuxpl-20-cwiczenia-praktyczne-D,pd,78815.jpg" />
+    <Content Include="covers\openofficeuxpl-calc-20-cwiczenia,pd,126917.jpg" />
+    <Content Include="covers\openofficeuxpl-w-biurze-i-nie-tylko,pd,106871.jpg" />
+    <Content Include="covers\oprogramowanie-uzytkowe-w-systemie-linux,pd,34349.jpg" />
+    <Content Include="covers\optymalizacja-systemu-unix,pd,123898.jpg" />
+    <Content Include="covers\optymalizacja-wydajnosci-aplikacji,pd,410857.jpg" />
+    <Content Include="covers\oracle-database,pd,215289.jpg" />
+    <Content Include="covers\oracle-database-10g-administracja-bazy,pd,145780.jpg" />
+    <Content Include="covers\oracle-database-11g-i-sql-programowanie,pd,180492.jpg" />
+    <Content Include="covers\oracle-database-11g-kompendium,pd,225586.jpg" />
+    <Content Include="covers\oracle-database-11g-nowe-mozliwosci,pd,199369.jpg" />
+    <Content Include="covers\oracle-database-11g-podrecznik,pd,227669.jpg" />
+    <Content Include="covers\oracle-database-11g-to-co-najwazniejsze,pd,156975.jpg" />
+    <Content Include="covers\os-x-mountain-lion,pd,433696.jpg" />
+    <Content Include="covers\pagemarker-70-xp-od-a-do-z,pd,52853.jpg" />
+    <Content Include="covers\pamiec-C,pd,118361.jpg" />
+    <Content Include="covers\partycypacja-polityczna-w-internecie,pd,160035.jpg" />
+    <Content Include="covers\pascal-cwiczenia-praktyczne,pd,345820.jpg" />
+    <Content Include="covers\perelki-programowania,pd,308600.jpg" />
+    <Content Include="covers\perelki-programowania-gier-vademecum-C,pd,79062.jpg" />
+    <Content Include="covers\photoshop-cs3-pl,pd,138049.jpg" />
+    <Content Include="covers\photoshop-cs3-pl-B,pd,173329.jpg" />
+    <Content Include="covers\photoshop-cs4-pl,pd,202458.jpg" />
+    <Content Include="covers\photoshop-cs4-pl-b,pd,206296.jpg" />
+    <Content Include="covers\photoshop-cs4cs4-pl-a,pd,206402.jpg" />
+    <Content Include="covers\photoshop-cs5-pl-a,pd,258394.jpg" />
+    <Content Include="covers\photoshop-cs5-pl-b,pd,264055.jpg" />
+    <Content Include="covers\photoshop-cs6cs6-pl-nieoficjalny,pd,409400.jpg" />
+    <Content Include="covers\photoshop-korekcja-i-separacja,pd,110184.jpg" />
+    <Content Include="covers\photoshop-ksiega-kanalow-obrazu-D,pd,78809.jpg" />
+    <Content Include="covers\photoshop-maskowanie-i-komponowanie,pd,132892.jpg" />
+    <Content Include="covers\photoshop-maskowanie-i-komponowanie-a,pd,434413.jpg" />
+    <Content Include="covers\photoshop-pikantne-efekty-specjalne,pd,427410.jpg" />
+    <Content Include="covers\photoshop-studio,pd,191295.jpg" />
+    <Content Include="covers\php-5-leksykon-kieszonkowy,pd,300461.jpg" />
+    <Content Include="covers\php-5-narzedzia-dla-ekspertow,pd,246426.jpg" />
+    <Content Include="covers\php-5-praktyczny-kurs,pd,300460.jpg" />
+    <Content Include="covers\php-i-jquery-receptury,pd,300449.jpg" />
+    <Content Include="covers\php-i-mysql-a,pd,135841.jpg" />
+    <Content Include="covers\php-i-mysql-cwiczenia,pd,65082.jpg" />
+    <Content Include="covers\php-i-mysql-ksiega-przykladow-cd,pd,106902.jpg" />
+    <Content Include="covers\php-i-mysql-od-nowicjusza-do-wojownika,pd,443371.jpg" />
+    <Content Include="covers\php-i-mysql-rozmowki,pd,429908.jpg" />
+    <Content Include="covers\php-i-mysql-witryna-www-oparta,pd,79426.jpg" />
+    <Content Include="covers\php-i-oracle,pd,182905.jpg" />
+    <Content Include="covers\php-mysql-i-apache-dla-kazdego-wydanie-B,pd,79503.jpg" />
+    <Content Include="covers\php-wzorce-projektowe,pd,444135.jpg" />
+    <Content Include="covers\php-zaawansowane-programowanie-a,pd,328186.jpg" />
+    <Content Include="covers\php5-tworzenie-stron-www,pd,150285.jpg" />
+    <Content Include="covers\php5-zaawansowane-tworzenie-stron-www,pd,110185.jpg" />
+    <Content Include="covers\pierwszy-komputer-poskromienie-peceta,pd,106901.jpg" />
+    <Content Include="covers\platforma-windows-azure,pd,407257.jpg" />
+    <Content Include="covers\plemiona-2-0,pd,209769.jpg" />
+    <Content Include="covers\po-prostu-adobe-photoshop,pd,196195.jpg" />
+    <Content Include="covers\po-prostu-coreldraw-graphics-suite-x4-a,pd,146526.jpg" />
+    <Content Include="covers\po-prostu-excel-2007-pl,pd,128554.jpg" />
+    <Content Include="covers\po-prostu-javascript,pd,335913.jpg" />
+    <Content Include="covers\po-prostu-mac-os-x-10-5-leopard-pl,pd,177192.jpg" />
+    <Content Include="covers\po-prostu-nero-7-D,pd,78638.jpg" />
+    <Content Include="covers\po-prostu-openoffice-ux-pl-3-x,pd,232837.jpg" />
+    <Content Include="covers\po-prostu-openofficeuxpl-20,pd,78775.jpg" />
+    <Content Include="covers\po-prostu-optymalizacja-windows-vista,pd,135145.jpg" />
+    <Content Include="covers\po-prostu-sieci-komputerowe-w-windows,pd,118561.jpg" />
+    <Content Include="covers\po-prostu-windows-7,pd,243755.jpg" />
+    <Content Include="covers\po-prostu-windows-vista-pl,pd,106903.jpg" />
+    <Content Include="covers\po-prostu-windows-vista-pl-B,pd,182045.jpg" />
+    <Content Include="covers\pocket-pc,pd,49408.jpg" />
+    <Content Include="covers\pocket-pc-cwiczenia-praktyczne,pd,126138.jpg" />
+    <Content Include="covers\pocket-pc-podrecznik-uzytkownika,pd,109706.jpg" />
+    <Content Include="covers\pocket-pc-podrecznik-uzytkownika-B,pd,132902.jpg" />
+    <Content Include="covers\poczta-lotus-notes-8-5-pl,pd,300450.jpg" />
+    <Content Include="covers\pod-kontrola-radarowa,pd,65625.jpg" />
+    <Content Include="covers\podkrecanie-procesorow-cwiczenia,pd,79210.jpg" />
+    <Content Include="covers\podrecznik-css-eric-meyer-o-tworzeniu,pd,288099.jpg" />
+    <Content Include="covers\podrecznik-dobrych-praktyk-wcag-20,pd,385280.jpg" />
+    <Content Include="covers\podrecznik-freelancera-tajniki-sukcesu,pd,389482.jpg" />
+    <Content Include="covers\podrecznik-html5,pd,300440.jpg" />
+    <Content Include="covers\podrecznik-jquery,pd,300439.jpg" />
+    <Content Include="covers\podrecznik-nodejs-smashing-magazine,pd,464629.jpg" />
+    <Content Include="covers\podrecznik-projektantow-logo-smashing,pd,320501.jpg" />
+    <Content Include="covers\podrecznik-projektantow-www,pd,394986.jpg" />
+    <Content Include="covers\podrecznik-startupu-budowa-wielkiej,pd,408598.jpg" />
+    <Content Include="covers\podrecznik-wordpressa,pd,428422.jpg" />
+    <Content Include="covers\podstawowy-kurs-systemow-baz-danych,pd,298819.jpg" />
+    <Content Include="covers\podstawy-algorytmizacji-i-programowania,pd,316934.jpg" />
+    <Content Include="covers\podstawy-architektury-i-technologii,pd,118363.jpg" />
+    <Content Include="covers\podstawy-edycji-tekstow,pd,272210.jpg" />
+    <Content Include="covers\podstawy-kryptografii-B,pd,111287.jpg" />
+    <Content Include="covers\podstawy-modelowania-krzywych-i,pd,123475.jpg" />
+    <Content Include="covers\podstawy-multimedialnych-systemow-baz,pd,212891.jpg" />
+    <Content Include="covers\podstawy-obslugi-komputera,pd,161655.jpg" />
+    <Content Include="covers\podstawy-programowania-mikrokontrolera-c,pd,363257.jpg" />
+    <Content Include="covers\podstawy-programowania-w-jezyku-c,pd,383722.jpg" />
+    <Content Include="covers\podstawy-programowania-wspolbieznego,pd,177651.jpg" />
+    <Content Include="covers\podstawy-projektowania-aplikacji,pd,372715.jpg" />
+    <Content Include="covers\podstawy-projektowania-ukladow-cyfrowych,pd,328470.jpg" />
+    <Content Include="covers\podstawy-sieci-komputerowych,pd,192824.jpg" />
+    <Content Include="covers\podstawy-statystyki-w-excelu,pd,357186.jpg" />
+    <Content Include="covers\podstawy-techniczne-inzynierii,pd,34307.jpg" />
+    <Content Include="covers\podstawy-techniki-cyfowej-wyd-2,pd,15961.jpg" />
+    <Content Include="covers\podstawy-technologii-informacyjnych-z,pd,64753.jpg" />
+    <Content Include="covers\podstawy-windows-phone-7-5,pd,326969.jpg" />
+    <Content Include="covers\polmocna-kontrola-typow-w-jezykach,pd,379517.jpg" />
+    <Content Include="covers\polsko-angielski-slownik-informatyczny,pd,79783.jpg" />
+    <Content Include="covers\ponadczasowe-logo-projektowanie-znakow,pd,369914.jpg" />
+    <Content Include="covers\ponadczasowe-strony-internetowe,pd,359359.jpg" />
+    <Content Include="covers\popularne-uslugi-internetowe,pd,302984.jpg" />
+    <Content Include="covers\poradnik-wideoamatora,pd,229326.jpg" />
+    <Content Include="covers\porady-i-triki-w-php,pd,294257.jpg" />
+    <Content Include="covers\postgresql-a,pd,286299.jpg" />
+    <Content Include="covers\postgresql-B,pd,145766.jpg" />
+    <Content Include="covers\powerpoint-2007,pd,219546.jpg" />
+    <Content Include="covers\powerpoint-2007-pl,pd,148495.jpg" />
+    <Content Include="covers\powerpoint-2007-pl-a,pd,203748.jpg" />
+    <Content Include="covers\powerpoint-2010-pl,pd,264056.jpg" />
+    <Content Include="covers\powerpoint-2010-pl-a,pd,282325.jpg" />
+    <Content Include="covers\powerpoint-2010-praktyczny-kurs,pd,315136.jpg" />
+    <Content Include="covers\powerpoint-tworzenie-skutecznych,pd,307647.jpg" />
+    <Content Include="covers\poznaj-netware-50,pd,15754.jpg" />
+    <Content Include="covers\poznajemy-internet-2001,pd,51108.jpg" />
+    <Content Include="covers\pozycjonowanie-i-optymalizacja-stron-C,pd,168067.jpg" />
+    <Content Include="covers\pozycjonowanie-i-optymalizacja-stron-www,pd,278643.jpg" />
+    <Content Include="covers\pozycjonowanie-i-optymalizacja-stron-www-a,pd,298672.jpg" />
+    <Content Include="covers\pozycjonowanie-w-wyszukiwarkach,pd,147758.jpg" />
+    <Content Include="covers\pozycjonowanie-w-wyszukiwarkach-a,pd,230989.jpg" />
+    <Content Include="covers\pragmatyka-internetu,pd,415336.jpg" />
+    <Content Include="covers\praktyczna-analiza-pakietow,pd,374767.jpg" />
+    <Content Include="covers\praktyczne-podejscie-do-inzynierii,pd,34819.jpg" />
+    <Content Include="covers\praktyczny-kurs-asemblera,pd,79224.jpg" />
+    <Content Include="covers\praktyczny-kurs-java-a,pd,89796.jpg" />
+    <Content Include="covers\prawdziwa-historia-internetu,pd,292229.jpg" />
+    <Content Include="covers\problogger-jak-czerpac-zyski-ze,pd,322758.jpg" />
+    <Content Include="covers\proces-tworzenia-konkurencyjnej-marki,pd,372710.jpg" />
+    <Content Include="covers\profesjonalne-tworzenie-gier,pd,435250.jpg" />
+    <Content Include="covers\profesjonalne-tworzenie-kopii,pd,316515.jpg" />
+    <Content Include="covers\profesjonalne-zarzadzanie-barwa,pd,79313.jpg" />
+    <Content Include="covers\programowanie,pd,218382.jpg" />
+    <Content Include="covers\programowanie-aplikacji-dla-urzadzen,pd,236280.jpg" />
+    <Content Include="covers\programowanie-aplikacji-na-iphone-4,pd,306339.jpg" />
+    <Content Include="covers\programowanie-aplikacji-na-serwisy,pd,358103.jpg" />
+    <Content Include="covers\programowanie-ekstremalne-w-c,pd,257149.jpg" />
+    <Content Include="covers\programowanie-gier,pd,71839.jpg" />
+    <Content Include="covers\programowanie-microsoft-sql-server-2008,pd,256579.jpg" />
+    <Content Include="covers\programowanie-mobilnych-stron,pd,310753.jpg" />
+    <Content Include="covers\programowanie-obiektowe-i-zdarzeniowe,pd,379488.jpg" />
+    <Content Include="covers\programowanie-obrabiarek-cnc-frezowanie,pd,49839.jpg" />
+    <Content Include="covers\programowanie-obrabiarek-cnc-toczenie,pd,149560.jpg" />
+    <Content Include="covers\programowanie-rownolegle,pd,453390.jpg" />
+    <Content Include="covers\programowanie-sterownikow-przemyslowych,pd,26545.jpg" />
+    <Content Include="covers\programowanie-uslug-wcf,pd,338196.jpg" />
+    <Content Include="covers\programowanie-w-excelu-2007-pl,pd,156476.jpg" />
+    <Content Include="covers\programowanie-w-jezyku-ansi-c-elementy,pd,127954.jpg" />
+    <Content Include="covers\programowanie-w-jezyku-c-z-uzyciem,pd,473176.jpg" />
+    <Content Include="covers\programowanie-w-jezyku-clojure,pd,380584.jpg" />
+    <Content Include="covers\programowanie-w-jezyku-java-zbior,pd,346215.jpg" />
+    <Content Include="covers\programowanie-w-jezyku-r,pd,474143.jpg" />
+    <Content Include="covers\programowanie-w-linuksie-cwiczenia,pd,332697.jpg" />
+    <Content Include="covers\programowanie-w-ruby,pd,224717.jpg" />
+    <Content Include="covers\programowanie-w-srodowisku-systemu-unix,pd,34864.jpg" />
+    <Content Include="covers\programowanie-w-systemie-windows,pd,239393.jpg" />
+    <Content Include="covers\programowanie-wspolbiezne-systemy,pd,365026.jpg" />
+    <Content Include="covers\project-2007-cwiczenia,pd,222006.jpg" />
+    <Content Include="covers\projekt-mckinsey,pd,256580.jpg" />
+    <Content Include="covers\projektowanie-baz-danych-dla-kazdego,pd,474082.jpg" />
+    <Content Include="covers\projektowanie-elementow-maszyn,pd,406401.jpg" />
+    <Content Include="covers\projektowanie-gier-w-srodowisku-unity,pd,351821.jpg" />
+    <Content Include="covers\projektowanie-hurtowni-danych-a,pd,293075.jpg" />
+    <Content Include="covers\projektowanie-interfejsow-sprawdzone,pd,335914.jpg" />
+    <Content Include="covers\projektowanie-serwisow-www-standardy,pd,78873.jpg" />
+    <Content Include="covers\projektowanie-serwisow-www-standardy-a,pd,244105.jpg" />
+    <Content Include="covers\projektowanie-stron-internetowych-a,pd,472905.jpg" />
+    <Content Include="covers\projektowanie-systemow-cms-przy-uzyciu,pd,303828.jpg" />
+    <Content Include="covers\projektowanie-witryn-internetowych-dla,pd,237855.jpg" />
+    <Content Include="covers\projektowanie-witryn-internetowych-user,pd,398969.jpg" />
+    <Content Include="covers\projektowanie-www-ksiega-pomyslow-2,pd,404528.jpg" />
+    <Content Include="covers\prostota-i-uzytecznosc,pd,291813.jpg" />
+    <Content Include="covers\prosty-przepis-na-j2ee,pd,152749.jpg" />
+    <Content Include="covers\przechytrzyc-google-odkryj-skuteczna,pd,321395.jpg" />
+    <Content Include="covers\przetestuj-ja-sam,pd,229949.jpg" />
+    <Content Include="covers\przetwarzanie-i-analiza-obrazow,pd,277857.jpg" />
+    <Content Include="covers\przygotowanie-do-wyceny-startup-okiem,pd,471461.jpg" />
+    <Content Include="covers\python-receptury-C,pd,78704.jpg" />
+    <Content Include="covers\quantum-gis-tworzenie-i-analiza-map,pd,441753.jpg" />
+    <Content Include="covers\rails,pd,198407.jpg" />
+    <Content Include="covers\rails-a,pd,211817.jpg" />
+    <Content Include="covers\rails-projektowanie-systemow-klasy,pd,224718.jpg" />
+    <Content Include="covers\rails-przepisy,pd,79483.jpg" />
+    <Content Include="covers\rails-receptury,pd,111852.jpg" />
+    <Content Include="covers\rails-zaawansowane-programowanie,pd,159819.jpg" />
+    <Content Include="covers\railsspace,pd,148752.jpg" />
+    <Content Include="covers\raport-specjalny-szkoly-hakerow-czesc-1,pd,291257.jpg" />
+    <Content Include="covers\raspberry-pi-przewodnik-dla,pd,475566.jpg" />
+    <Content Include="covers\raspberry-pi-przewodnik-uzytkownika,pd,440017.jpg" />
+    <Content Include="covers\real-world-adobe-creative-suite-2,pd,106898.jpg" />
+    <Content Include="covers\real-world-adobe-indesign-cs2,pd,158271.jpg" />
+    <Content Include="covers\real-world-adobe-indesign-cs3,pd,168131.jpg" />
+    <Content Include="covers\real-world-adobe-photoshop-cs5-dla,pd,275004.jpg" />
+    <Content Include="covers\real-world-camera-raw-i-photoshop,pd,156667.jpg" />
+    <Content Include="covers\real-world-camera-raw-i-photoshop-cs2-D,pd,78692.jpg" />
+    <Content Include="covers\redesign-the-web,pd,470726.jpg" />
+    <Content Include="covers\regionalne-sieci-wspolpracy,pd,303642.jpg" />
+    <Content Include="covers\rejestr-windows-vista,pd,178843.jpg" />
+    <Content Include="covers\rejestr-windows-vista-B,pd,175083.jpg" />
+    <Content Include="covers\relacyjne-bazy-danych-wyklady,pd,379478.jpg" />
+    <Content Include="covers\responsive-web-design-projektowanie,pd,450073.jpg" />
+    <Content Include="covers\routing-i-switching-praktyczny,pd,373095.jpg" />
+    <Content Include="covers\rozbudowa-i-naprawa-serwerow,pd,119064.jpg" />
+    <Content Include="covers\rs-232c-praktyczne-programowanie-od,pd,106864.jpg" />
+    <Content Include="covers\ruby,pd,195755.jpg" />
+    <Content Include="covers\ruby-a,pd,199368.jpg" />
+    <Content Include="covers\ruby-b,pd,208290.jpg" />
+    <Content Include="covers\ruby-on-rails,pd,165168.jpg" />
+    <Content Include="covers\ruby-on-rails-B,pd,79513.jpg" />
+    <Content Include="covers\ruby-on-rails-cwiczenia-B,pd,78860.jpg" />
+    <Content Include="covers\ruby-receptury,pd,145772.jpg" />
+    <Content Include="covers\ruby-tao-programowania-w-400,pd,112296.jpg" />
+    <Content Include="covers\ruby-wzorce-projektowe,pd,146258.jpg" />
+    <Content Include="covers\rzecz-o-istocie-informatyki-algorytmika-b,pd,240716.jpg" />
+    <Content Include="covers\sam-wypalam-cd,pd,44982.jpg" />
+    <Content Include="covers\sam-wypalam-dvd,pd,79225.jpg" />
+    <Content Include="covers\sap-scenariusze-ksiegowe,pd,433640.jpg" />
+    <Content Include="covers\scala-od-podszewki,pd,406316.jpg" />
+    <Content Include="covers\second-life,pd,167135.jpg" />
+    <Content Include="covers\sekrety-cyfrowej-ciemni-scotta,pd,200858.jpg" />
+    <Content Include="covers\sekrety-magicznego-ogrodu-unix-system,pd,51100.jpg" />
+    <Content Include="covers\sekrety-magicznego-ogrodu-unix-system-v,pd,65630.jpg" />
+    <Content Include="covers\sekrety-seo,pd,310412.jpg" />
+    <Content Include="covers\sekrety-skutecznych-prezentacji,pd,153500.jpg" />
+    <Content Include="covers\seo,pd,164852.jpg" />
+    <Content Include="covers\serwis-web-2-0,pd,225333.jpg" />
+    <Content Include="covers\serwisy-spolecznosciowe,pd,176134.jpg" />
+    <Content Include="covers\serwisy-spolecznosciowe-dla-seniorow,pd,312924.jpg" />
+    <Content Include="covers\sieci-domowe-i-bezprzewodowe,pd,223070.jpg" />
+    <Content Include="covers\sieci-domowe-nieoficjalny-podrecznik-C,pd,78705.jpg" />
+    <Content Include="covers\sieci-komputerowe,pd,340155.jpg" />
+    <Content Include="covers\sieci-komputerowe-biblia,pd,277789.jpg" />
+    <Content Include="covers\sieci-komputerowe-i-intersieci-a,pd,310754.jpg" />
+    <Content Include="covers\sieci-vpn,pd,205257.jpg" />
+    <Content Include="covers\sieci-vpn-zdalna-praca,pd,118399.jpg" />
+    <Content Include="covers\siedem-jezykow-w-siedem-tygodni,pd,303829.jpg" />
+    <Content Include="covers\silverlight-4-w-dzialaniu,pd,257152.jpg" />
+    <Content Include="covers\skalowalne-witryny-internetowe-budowa,pd,106858.jpg" />
+    <Content Include="covers\skuteczna-i-szybka-pomoc-cd,pd,238269.jpg" />
+    <Content Include="covers\skuteczne-programowanie-lego-mindstorms,pd,416478.jpg" />
+    <Content Include="covers\slackware-linux-B,pd,78655.jpg" />
+    <Content Include="covers\slackware-linux-cwiczenia,pd,153501.jpg" />
+    <Content Include="covers\slowniczek-terminow-komputerowych,pd,51211.jpg" />
+    <Content Include="covers\slownik-informatyczny,pd,152083.jpg" />
+    <Content Include="covers\slownik-informatyczny-dla-kazdego,pd,198327.jpg" />
+    <Content Include="covers\small-business-server-2008-pl,pd,244386.jpg" />
+    <Content Include="covers\smarty-php-leksykon-kieszonkowy,pd,78865.jpg" />
+    <Content Include="covers\soa-koncepcje-technologie,pd,468005.jpg" />
+    <Content Include="covers\socjalizacja-studentow-do-spoleczenstwa,pd,324659.jpg" />
+    <Content Include="covers\splatana-siec-przewodnik-po,pd,341000.jpg" />
+    <Content Include="covers\spraw-by-rzeczy-przemowily,pd,402110.jpg" />
+    <Content Include="covers\sprawa-microsoft-studium-przypadku,pd,369858.jpg" />
+    <Content Include="covers\spring-w-akcji,pd,365027.jpg" />
+    <Content Include="covers\sprzedaj-swoj-software-B,pd,79453.jpg" />
+    <Content Include="covers\sql,pd,123992.jpg" />
+    <Content Include="covers\sql-cwiczenia-praktyczne-C,pd,78846.jpg" />
+    <Content Include="covers\sql-leksykon-kieszonkowy,pd,300437.jpg" />
+    <Content Include="covers\sql-praktyczny-kurs,pd,300456.jpg" />
+    <Content Include="covers\sql-server-2000-z-xml,pd,279747.jpg" />
+    <Content Include="covers\sql-server-2005,pd,40658.jpg" />
+    <Content Include="covers\sql-server-2005-B,pd,145770.jpg" />
+    <Content Include="covers\sql-server-2005-C,pd,147524.jpg" />
+    <Content Include="covers\sql-server-2005-express-skuteczne,pd,110399.jpg" />
+    <Content Include="covers\sql-server-2005-programowanie-od,pd,113999.jpg" />
+    <Content Include="covers\sql-zaawansowane-techniki-programowania,pd,127406.jpg" />
+    <Content Include="covers\staroffice-draw,pd,52180.jpg" />
+    <Content Include="covers\strona-docelowa,pd,183453.jpg" />
+    <Content Include="covers\struktura-i-interpretacja-programow,pd,33937.jpg" />
+    <Content Include="covers\suse-linux-zaczynamy-od-podstaw,pd,24684.jpg" />
+    <Content Include="covers\swish-max2-i-swish-max3,pd,191219.jpg" />
+    <Content Include="covers\swish-max3,pd,233243.jpg" />
+    <Content Include="covers\swishmax-animacje-flash-cd,pd,55808.jpg" />
+    <Content Include="covers\symbian-s60,pd,206526.jpg" />
+    <Content Include="covers\symfonia-c-standard-tomy-1-2,pd,62757.jpg" />
+    <Content Include="covers\symfony-2-od-podstaw,pd,337455.jpg" />
+    <Content Include="covers\symfony-w-przykladach,pd,256787.jpg" />
+    <Content Include="covers\system-windows-najlepsze-rozwiazania,pd,155480.jpg" />
+    <Content Include="covers\systemy-baz-danych-a,pd,300436.jpg" />
+    <Content Include="covers\systemy-baz-danych-wyklady-i-cwiczenia,pd,379542.jpg" />
+    <Content Include="covers\systemy-informacyjne-zarzadzania,pd,379520.jpg" />
+    <Content Include="covers\systemy-informatyczne-w-dynamicznej,pd,37943.jpg" />
+    <Content Include="covers\systemy-informatyczne-zarzadzania,pd,67983.jpg" />
+    <Content Include="covers\systemy-informatyczne-zarzadzania-a,pd,388690.jpg" />
+    <Content Include="covers\systemy-operacyjne,pd,209645.jpg" />
+    <Content Include="covers\sztuka-programowania-wieloprocesorowego,pd,209650.jpg" />
+    <Content Include="covers\sztuka-seo-optymalizacja-witryn,pd,407258.jpg" />
+    <Content Include="covers\tablice-informatyczne-ajax,pd,143922.jpg" />
+    <Content Include="covers\tablice-informatyczne-aspnet,pd,79472.jpg" />
+    <Content Include="covers\tablice-informatyczne-basicvbnet,pd,79474.jpg" />
+    <Content Include="covers\tablice-informatyczne-bios,pd,106890.jpg" />
+    <Content Include="covers\tablice-informatyczne-c,pd,79353.jpg" />
+    <Content Include="covers\tablice-informatyczne-c-a,pd,307910.jpg" />
+    <Content Include="covers\tablice-informatyczne-c-B,pd,79471.jpg" />
+    <Content Include="covers\tablice-informatyczne-css3,pd,307911.jpg" />
+    <Content Include="covers\tablice-informatyczne-delphi,pd,79285.jpg" />
+    <Content Include="covers\tablice-informatyczne-drupal,pd,332439.jpg" />
+    <Content Include="covers\tablice-informatyczne-flash-mx-2004,pd,79382.jpg" />
+    <Content Include="covers\tablice-informatyczne-html-5,pd,307912.jpg" />
+    <Content Include="covers\tablice-informatyczne-java,pd,79276.jpg" />
+    <Content Include="covers\tablice-informatyczne-java-a,pd,307913.jpg" />
+    <Content Include="covers\tablice-informatyczne-joomla,pd,332440.jpg" />
+    <Content Include="covers\tablice-informatyczne-jquery,pd,308020.jpg" />
+    <Content Include="covers\tablice-informatyczne-linux,pd,143543.jpg" />
+    <Content Include="covers\tablice-informatyczne-ms-excel-2007-pl,pd,150417.jpg" />
+    <Content Include="covers\tablice-informatyczne-oracle,pd,159483.jpg" />
+    <Content Include="covers\tablice-informatyczne-photoshop-cs3cs3,pd,151018.jpg" />
+    <Content Include="covers\tablice-informatyczne-php,pd,79277.jpg" />
+    <Content Include="covers\tablice-informatyczne-php-5,pd,307915.jpg" />
+    <Content Include="covers\tablice-informatyczne-sql,pd,79396.jpg" />
+    <Content Include="covers\tablice-informatyczne-uml,pd,79473.jpg" />
+    <Content Include="covers\tablice-informatyczne-windows-vista-pl,pd,143660.jpg" />
+    <Content Include="covers\tablice-informatyczne-wordpress,pd,332442.jpg" />
+    <Content Include="covers\tablice-informatyczne-xml,pd,79475.jpg" />
+    <Content Include="covers\tajniki-nagrywania-plyt-cd,pd,124155.jpg" />
+    <Content Include="covers\tajniki-windows-8,pd,437217.jpg" />
+    <Content Include="covers\tcpip-od-srodka-protokoly,pd,401710.jpg" />
+    <Content Include="covers\techniki-informacyjne-w-badaniach,pd,124786.jpg" />
+    <Content Include="covers\techniki-komputerowa-cax-w-inzynierii,pd,123605.jpg" />
+    <Content Include="covers\technologie-informacyjne-a,pd,434049.jpg" />
+    <Content Include="covers\technologie-informacyjne-dla-a,pd,376081.jpg" />
+    <Content Include="covers\technologie-informatyczne-w-logistyce,pd,226065.jpg" />
+    <Content Include="covers\technologie-internetowe,pd,379535.jpg" />
+    <Content Include="covers\teleinformatyka,pd,5840.jpg" />
+    <Content Include="covers\teoria-i-algorytmy-sterowania-a,pd,356681.jpg" />
+    <Content Include="covers\teoria-i-konstrukcja-obiektowych,pd,379500.jpg" />
+    <Content Include="covers\teoria-informacji,pd,157404.jpg" />
+    <Content Include="covers\the-smashing-book-1,pd,378605.jpg" />
+    <Content Include="covers\the-smashing-book-2,pd,308765.jpg" />
+    <Content Include="covers\thinking-in-c-edycja-polska,pd,79025.jpg" />
+    <Content Include="covers\thinking-in-java-edycja-polska-a,pd,277093.jpg" />
+    <Content Include="covers\transmisja-internetowa-danych,pd,224438.jpg" />
+    <Content Include="covers\tresc-jest-kluczowa,pd,309819.jpg" />
+    <Content Include="covers\turbo-pascal,pd,292811.jpg" />
+    <Content Include="covers\twarza-w-twarz-z-obiektywem,pd,191296.jpg" />
+    <Content Include="covers\twoja-pierwsza-strona-www,pd,272821.jpg" />
+    <Content Include="covers\tworcze-ilustrowanie,pd,118584.jpg" />
+    <Content Include="covers\tworzenie-aplikacji-dla-ios-we-flashu,pd,383662.jpg" />
+    <Content Include="covers\tworzenie-aplikacji-dla-systemu-windows,pd,425287.jpg" />
+    <Content Include="covers\tworzenie-aplikacji-dla-windows,pd,149834.jpg" />
+    <Content Include="covers\tworzenie-aplikacji-ios-na-urzadzenia,pd,300443.jpg" />
+    <Content Include="covers\tworzenie-aplikacji-na-platforme-ios-5,pd,347088.jpg" />
+    <Content Include="covers\tworzenie-gier-internetowych-receptury,pd,465640.jpg" />
+    <Content Include="covers\tworzenie-gier-na-platforme-android-4,pd,357857.jpg" />
+    <Content Include="covers\tworzenie-izometrycznych-gier,pd,314969.jpg" />
+    <Content Include="covers\tworzenie-nowoczesnych-aplikacji,pd,358104.jpg" />
+    <Content Include="covers\tworzenie-oprogramowania-w-30-dni,pd,441374.jpg" />
+    <Content Include="covers\tworzenie-serwisow-www,pd,203746.jpg" />
+    <Content Include="covers\tworzenie-serwisow-www-standardy,pd,239064.jpg" />
+    <Content Include="covers\tworzenie-stron-internetowych,pd,381607.jpg" />
+    <Content Include="covers\tworzenie-stron-metoda-stopniowego,pd,241816.jpg" />
+    <Content Include="covers\tworzenie-stron-www-b,pd,217280.jpg" />
+    <Content Include="covers\tworzenie-stron-www-cwiczenia,pd,122923.jpg" />
+    <Content Include="covers\tworzenie-stron-www-ilustrowany,pd,268127.jpg" />
+    <Content Include="covers\tworzenie-stron-www-ilustrowany-C,pd,79479.jpg" />
+    <Content Include="covers\typografia-od-podstaw,pd,249546.jpg" />
+    <Content Include="covers\ubuntu-linux-cwiczenia-D,pd,78859.jpg" />
+    <Content Include="covers\ubuntu-oneiric-ocelot-przesiadz-sie,pd,342139.jpg" />
+    <Content Include="covers\uklady-elektroniczne-w-praktyce,pd,436057.jpg" />
+    <Content Include="covers\uklady-logiki-programowalnej,pd,342586.jpg" />
+    <Content Include="covers\uklady-mikroprocesorowe,pd,17465.jpg" />
+    <Content Include="covers\uklady-mikroprocesorowe-a,pd,216519.jpg" />
+    <Content Include="covers\uklady-wykorzystujace-sterowniki-plc,pd,133987.jpg" />
+    <Content Include="covers\uml-2-x-cwiczenia-zaawansowane,pd,312922.jpg" />
+    <Content Include="covers\uml-i-wzorce-projektowe,pd,260202.jpg" />
+    <Content Include="covers\urzadzenia-techniki-komputerowej-2,pd,152695.jpg" />
+    <Content Include="covers\usb,pd,161164.jpg" />
+    <Content Include="covers\uzytkowanie-komputerow,pd,6308.jpg" />
+    <Content Include="covers\uzytkowanie-komputerow-a,pd,392429.jpg" />
+    <Content Include="covers\uzytkownicy-systemow-hipertekstowych,pd,370565.jpg" />
+    <Content Include="covers\vademecum-administratora-windows-8,pd,364479.jpg" />
+    <Content Include="covers\vademecum-hackingu-skuteczna-obrona,pd,433906.jpg" />
+    <Content Include="covers\vba-dla-excela-2007-pl-88-praktycznych,pd,113723.jpg" />
+    <Content Include="covers\vba-dla-excela-2010-pl,pd,272948.jpg" />
+    <Content Include="covers\vba-dla-excela-2013-pl-200,pd,464630.jpg" />
+    <Content Include="covers\virtuemart-jak-szybko-stworzyc,pd,345823.jpg" />
+    <Content Include="covers\visual-basic-2005-almanach,pd,145769.jpg" />
+    <Content Include="covers\visual-basic-2005-od-podstaw,pd,132901.jpg" />
+    <Content Include="covers\visual-basic-2008-praca-z-danymi,pd,316574.jpg" />
+    <Content Include="covers\visual-basic-dla-studentow,pd,265661.jpg" />
+    <Content Include="covers\visual-basic-nauka-programowania-w,pd,123975.jpg" />
+    <Content Include="covers\visual-basic-net-alchemia-programowania,pd,145284.jpg" />
+    <Content Include="covers\visual-basic-net-w-praktyce,pd,344785.jpg" />
+    <Content Include="covers\visual-basic-net-wzorce-projektowe-C,pd,78728.jpg" />
+    <Content Include="covers\visual-c,pd,220542.jpg" />
+    <Content Include="covers\visual-foxpro-9,pd,199785.jpg" />
+    <Content Include="covers\visual-studio-2012-i-net-45,pd,441824.jpg" />
+    <Content Include="covers\w-80-zadan-dookola-excela,pd,354872.jpg" />
+    <Content Include="covers\w-drodze-do-ccna,pd,251626.jpg" />
+    <Content Include="covers\w-drodze-do-ccna-a,pd,251863.jpg" />
+    <Content Include="covers\wartosc-pieniadza-w-czasie-obliczania,pd,286412.jpg" />
+    <Content Include="covers\wcf-od-podstaw,pd,310414.jpg" />
+    <Content Include="covers\web-20-przewodnik-po-strategiach,pd,159660.jpg" />
+    <Content Include="covers\web-analytics-2-0,pd,231262.jpg" />
+    <Content Include="covers\webmasterstwo-w-7-dni,pd,286615.jpg" />
+    <Content Include="covers\webwriting,pd,208292.jpg" />
+    <Content Include="covers\wi-fi-domowe-sieci-bezprzewodowe,pd,233528.jpg" />
+    <Content Include="covers\wiecej-niz-excel-2007,pd,216670.jpg" />
+    <Content Include="covers\wiedza-i-jezyk-informacyjny,pd,294953.jpg" />
+    <Content Include="covers\wielka-ksiega-wskazowek,pd,219299.jpg" />
+    <Content Include="covers\wielkie-umysly-programowania,pd,225991.jpg" />
+    <Content Include="covers\windows-2000-server-architektura-i,pd,78978.jpg" />
+    <Content Include="covers\windows-7,pd,256873.jpg" />
+    <Content Include="covers\windows-7-a,pd,342497.jpg" />
+    <Content Include="covers\windows-7-komendy-i-polecenia,pd,302999.jpg" />
+    <Content Include="covers\windows-7-krok-po-kroku,pd,226173.jpg" />
+    <Content Include="covers\windows-7-od-podszewki,pd,315387.jpg" />
+    <Content Include="covers\windows-7-pl,pd,200102.jpg" />
+    <Content Include="covers\windows-7-pl-b,pd,200688.jpg" />
+    <Content Include="covers\windows-7-pl-biblia,pd,228422.jpg" />
+    <Content Include="covers\windows-7-pl-dla-seniorow,pd,258020.jpg" />
+    <Content Include="covers\windows-7-pl-e,pd,231110.jpg" />
+    <Content Include="covers\windows-7-pl-f,pd,235294.jpg" />
+    <Content Include="covers\windows-7-pl-g,pd,241539.jpg" />
+    <Content Include="covers\windows-7-pl-h,pd,258019.jpg" />
+    <Content Include="covers\windows-7-pl-i,pd,264057.jpg" />
+    <Content Include="covers\windows-7-pl-kurs,pd,231046.jpg" />
+    <Content Include="covers\windows-7-pl-optymalizacja,pd,331133.jpg" />
+    <Content Include="covers\windows-8-kompletny-przewodnik-po,pd,403931.jpg" />
+    <Content Include="covers\windows-8-pl,pd,347766.jpg" />
+    <Content Include="covers\windows-8-pl-cwiczenia-praktyczne,pd,347765.jpg" />
+    <Content Include="covers\windows-8-pl-zaawansowana,pd,347767.jpg" />
+    <Content Include="covers\windows-8-praktyczne-rozwiazania,pd,447785.jpg" />
+    <Content Include="covers\windows-8-programowanie-aplikacji,pd,447784.jpg" />
+    <Content Include="covers\windows-8-tworzenie-aplikacji,pd,429221.jpg" />
+    <Content Include="covers\windows-81-krok-po-kroku,pd,468056.jpg" />
+    <Content Include="covers\windows-81-pl,pd,455975.jpg" />
+    <Content Include="covers\windows-98-pl,pd,115766.jpg" />
+    <Content Include="covers\windows-98-pl-cwiczenia-praktyczne,pd,78922.jpg" />
+    <Content Include="covers\windows-azure-wprowadzenie,pd,315515.jpg" />
+    <Content Include="covers\windows-media-center-domowe-centrum,pd,106855.jpg" />
+    <Content Include="covers\windows-millennimu-edition,pd,51079.jpg" />
+    <Content Include="covers\windows-millennium-edition,pd,78956.jpg" />
+    <Content Include="covers\windows-phone-7,pd,303831.jpg" />
+    <Content Include="covers\windows-powershell,pd,169800.jpg" />
+    <Content Include="covers\windows-powershell-a,pd,257128.jpg" />
+    <Content Include="covers\windows-powershell-leksykon-kieszonkowy,pd,152846.jpg" />
+    <Content Include="covers\windows-server-2003-bezpieczenstwo,pd,106844.jpg" />
+    <Content Include="covers\windows-server-2003-ksiega-eksperta,pd,79156.jpg" />
+    <Content Include="covers\windows-server-2003-rejestr-systemu,pd,79309.jpg" />
+    <Content Include="covers\windows-server-2003-wysoko-wydajne-D,pd,78717.jpg" />
+    <Content Include="covers\windows-server-2008-infrastruktura,pd,153499.jpg" />
+    <Content Include="covers\windows-server-2008-ochrona-dostepu,pd,256880.jpg" />
+    <Content Include="covers\windows-server-2012-hyper-v-podrecznik,pd,423786.jpg" />
+    <Content Include="covers\windows-small-business-server-2003-C,pd,79361.jpg" />
+    <Content Include="covers\windows-vista,pd,108151.jpg" />
+    <Content Include="covers\windows-vista-krok-po-kroku-cd,pd,103424.jpg" />
+    <Content Include="covers\windows-vista-leksykon-kieszonkowy,pd,125823.jpg" />
+    <Content Include="covers\windows-vista-naprawa-i-optymalizacja,pd,156477.jpg" />
+    <Content Include="covers\windows-vista-pl,pd,166112.jpg" />
+    <Content Include="covers\windows-vista-pl-a,pd,203749.jpg" />
+    <Content Include="covers\windows-vista-pl-administracja,pd,153982.jpg" />
+    <Content Include="covers\windows-vista-pl-B,pd,173328.jpg" />
+    <Content Include="covers\windows-vista-pl-bez-kantow,pd,127971.jpg" />
+    <Content Include="covers\windows-vista-pl-biblia,pd,120942.jpg" />
+    <Content Include="covers\windows-vista-pl-cwiczenia-praktyczne-C,pd,79466.jpg" />
+    <Content Include="covers\windows-vista-pl-ilustrowany-przewodnik,pd,89798.jpg" />
+    <Content Include="covers\windows-vista-pl-instalacja-i-naprawa-C,pd,132936.jpg" />
+    <Content Include="covers\windows-vista-pl-ksiega-eksperta,pd,128113.jpg" />
+    <Content Include="covers\windows-vista-pl-kurs,pd,149963.jpg" />
+    <Content Include="covers\windows-vista-pl-nieoficjalny,pd,146312.jpg" />
+    <Content Include="covers\windows-vista-pl-przewodnik,pd,145370.jpg" />
+    <Content Include="covers\wizualizacje-architektoniczne,pd,284665.jpg" />
+    <Content Include="covers\wlamanie-do-komputera-jak-sie-przed,pd,307780.jpg" />
+    <Content Include="covers\wojna-strategiczna-w-cyberprzestrzeni,pd,34825.jpg" />
+    <Content Include="covers\wojownik-seo,pd,243533.jpg" />
+    <Content Include="covers\word-122-porady,pd,24909.jpg" />
+    <Content Include="covers\word-2007-aaabsolutnie-dla,pd,230476.jpg" />
+    <Content Include="covers\word-2007-pl-a,pd,203752.jpg" />
+    <Content Include="covers\word-2007-pl-dla-bystrzakow,pd,206400.jpg" />
+    <Content Include="covers\word-2007-pl-ilustrowany-przewodnik,pd,89816.jpg" />
+    <Content Include="covers\word-2010-pl,pd,264053.jpg" />
+    <Content Include="covers\word-2010-pl-a,pd,282326.jpg" />
+    <Content Include="covers\word-2010-pl-cwiczenia-praktyczne,pd,236192.jpg" />
+    <Content Include="covers\word-2010-pl-ilustrowany-przewodnik,pd,231111.jpg" />
+    <Content Include="covers\word-2010-pl-kurs,pd,231045.jpg" />
+    <Content Include="covers\word-2010-praktyczny-kurs,pd,315137.jpg" />
+    <Content Include="covers\word-2013-pl-cwiczenia-praktyczne,pd,415643.jpg" />
+    <Content Include="covers\word-2013-pl-kurs,pd,447786.jpg" />
+    <Content Include="covers\word-i-excel-dla-seniorow,pd,237144.jpg" />
+    <Content Include="covers\wordpress-3,pd,255365.jpg" />
+    <Content Include="covers\wordpress-3-kurs-wideo-pc-cd-rom,pd,316615.jpg" />
+    <Content Include="covers\wordpress-a,pd,303834.jpg" />
+    <Content Include="covers\wordpress-cwiczenia-praktyczne,pd,334715.jpg" />
+    <Content Include="covers\wordpress-programowanie-cwiczenia,pd,342138.jpg" />
+    <Content Include="covers\wprowadzenie-do-badan-operacyjnych-z,pd,17286.jpg" />
+    <Content Include="covers\wprowadzenie-do-dynamiki-spolecznej,pd,66466.jpg" />
+    <Content Include="covers\wprowadzenie-do-fizyki-w-grach,pd,386942.jpg" />
+    <Content Include="covers\wprowadzenie-do-html-5,pd,285666.jpg" />
+    <Content Include="covers\wprowadzenie-do-html5-nauka-html5,pd,337456.jpg" />
+    <Content Include="covers\wprowadzenie-do-informatyki-dla-B,pd,98396.jpg" />
+    <Content Include="covers\wprowadzenie-do-kompresji-danych,pd,105650.jpg" />
+    <Content Include="covers\wprowadzenie-do-raspberry-pi,pd,422232.jpg" />
+    <Content Include="covers\wskazniki-w-jezyku-c-przewodnik,pd,472356.jpg" />
+    <Content Include="covers\wspolbrzmienie,pd,309290.jpg" />
+    <Content Include="covers\wspolczesne-zasoby-informacyjne,pd,367619.jpg" />
+    <Content Include="covers\wstep-do-html5-i-css3,pd,277380.jpg" />
+    <Content Include="covers\wstep-do-programowania-sterownikow-plc,pd,216231.jpg" />
+    <Content Include="covers\wstep-do-programowania-w-jezyku-c-H,pd,78817.jpg" />
+    <Content Include="covers\wtyczki-do-wordpressa-programowanie,pd,314970.jpg" />
+    <Content Include="covers\www-narzedzia-metody-standardy,pd,379497.jpg" />
+    <Content Include="covers\wybrane-elementy-zarzadzania-projektem,pd,218519.jpg" />
+    <Content Include="covers\wybrane-problemy-spoleczne-i-zawodowe,pd,157226.jpg" />
+    <Content Include="covers\wybrane-problemy-spoleczne-i-zawodowe-a,pd,322829.jpg" />
+    <Content Include="covers\wydajne-programowanie-extreme,pd,29148.jpg" />
+    <Content Include="covers\wydajnosc-javy,pd,369021.jpg" />
+    <Content Include="covers\wydajny-javascript,pd,257126.jpg" />
+    <Content Include="covers\wyklady-z-podstaw-informatyki,pd,235683.jpg" />
+    <Content Include="covers\wykorzystanie-programu-excel,pd,370664.jpg" />
+    <Content Include="covers\wykresy-35-gotowych-rozwiazan-krok-po,pd,462184.jpg" />
+    <Content Include="covers\wyrazenia-regularne-receptury,pd,225990.jpg" />
+    <Content Include="covers\wyrazenia-regularne-wprowadzenie,pd,419107.jpg" />
+    <Content Include="covers\wyszukiwarki-internetowe-a-spoleczenstwo,pd,325869.jpg" />
+    <Content Include="covers\wzorce-projektowe-a,pd,235295.jpg" />
+    <Content Include="covers\wzorce-projektowe-rusz-glowa,pd,241219.jpg" />
+    <Content Include="covers\wzorce-soa,pd,428423.jpg" />
+    <Content Include="covers\wzorce-wyszukiwania,pd,249547.jpg" />
+    <Content Include="covers\wzorzec-mvc-w-php-dla-profesjonalistow,pd,421723.jpg" />
+    <Content Include="covers\xhtml-i-css-dostepne-witryny,pd,143979.jpg" />
+    <Content Include="covers\xml-szybki-start,pd,472906.jpg" />
+    <Content Include="covers\yii-framework,pd,458124.jpg" />
+    <Content Include="covers\zaawansowane-aplikacje-arkusza,pd,376083.jpg" />
+    <Content Include="covers\zacznij-tu-poznaj-microsoft-visual,pd,433973.jpg" />
+    <Content Include="covers\zagrozenia-cyberprzestrzeni-i-swiata,pd,467773.jpg" />
+    <Content Include="covers\zaklecia-photoshopa,pd,163291.jpg" />
+    <Content Include="covers\zaklocenia-w-urzadzeniach,pd,34075.jpg" />
+    <Content Include="covers\zakupy-w-sieci-dla-seniorow,pd,312926.jpg" />
+    <Content Include="covers\zakupy-z-excelem-bez-tajemnic,pd,180932.jpg" />
+    <Content Include="covers\zarzadzanie-architekturocentrycznym,pd,81121.jpg" />
+    <Content Include="covers\zarzadzanie-i-realizacja-projektow,pd,289737.jpg" />
+    <Content Include="covers\zarzadzanie-projektami-informatycznymi-J,pd,126706.jpg" />
+    <Content Include="covers\zarzadzanie-projektami-it-C,pd,132919.jpg" />
+    <Content Include="covers\zarzadzanie-przechowywaniem-danych,pd,204657.jpg" />
+    <Content Include="covers\zarzadzanie-systemami-i-sieciami,pd,24679.jpg" />
+    <Content Include="covers\zarzadzanie-technologiami,pd,153084.jpg" />
+    <Content Include="covers\zasady-grupy-w-systemach-windows-server,pd,256882.jpg" />
+    <Content Include="covers\zastepczy_pd.png" />
+    <Content Include="covers\zdajemy-egzamin-ecdl-cad,pd,191217.jpg" />
+    <Content Include="covers\zdalna-edukacja-potrzeby-problemy,pd,375954.jpg" />
+    <Content Include="covers\zend-framework-od-podstaw,pd,298818.jpg" />
+    <Content Include="covers\zestaw-narzedzi-do-administracji,pd,256883.jpg" />
+    <Content Include="covers\zintegrowane-systemy-informatyczne-a,pd,314994.jpg" />
+    <Content Include="covers\zintegrowane-systemy-informatycznego,pd,376052.jpg" />
+    <Content Include="covers\zrob-to-lepiej,pd,60411.jpg" />
+    <Content Include="covers\zrob-to-sam-projekty-na-ipoda,pd,256597.jpg" />
+    <Content Include="covers\zrozumiec-db2-nauka-na-przykladach-cd,pd,65204.jpg" />
+    <Content Include="covers\zwinny-samuraj,pd,308329.jpg" />
+    <Content Include="Default.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="Search.aspx" />
+    <None Include="Service References\LibraryService\configuration91.svcinfo" />
+    <None Include="Service References\LibraryService\configuration.svcinfo" />
+    <Content Include="Service References\LibraryService\LibraryService.disco" />
+    <Content Include="Service References\LibraryService\Projekt.MS3.LibraryService.BookForListLong.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\LibraryService\Projekt.MS3.LibraryService.BookForListShort.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Service References\LibraryService\LibraryService.wsdl" />
+    <None Include="Service References\LibraryService\LibraryService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\LibraryService\LibraryService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\LibraryService\LibraryService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\LibraryService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Show.aspx" />
+    <Content Include="style.css" />
+    <Content Include="About.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ACP.aspx.cs">
+      <DependentUpon>ACP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ACP.aspx.designer.cs">
+      <DependentUpon>ACP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Add.aspx.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Add.aspx.designer.cs">
+      <DependentUpon>Add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Search.aspx.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Search.aspx.designer.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\LibraryService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Show.aspx.cs">
+      <DependentUpon>Show.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Show.aspx.designer.cs">
+      <DependentUpon>Show.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Site.Master" />
+    <None Include="Properties\PublishProfiles\test.pubxml" />
+    <Content Include="Service References\LibraryService\Projekt.MS3.LibraryService.Book.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\LibraryService\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>55651</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:52504/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
